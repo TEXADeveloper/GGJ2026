@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        Cursor.visible = true;
+        Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 
         pickableObjects = objectParent.GetComponentsInChildren<PickableObject>().ToList<PickableObject>();
