@@ -51,7 +51,7 @@ public class EnemyAI : MonoBehaviour
         }
 
         float distanceToPlayer = distanceToTarget(transform.position, playerTransform.position);
-        distanceParameter.SetValue(this.gameObject, distanceToPlayer);
+        distanceParameter.SetGlobalValue(distanceToPlayer);
     }
 
     void LateUpdate()

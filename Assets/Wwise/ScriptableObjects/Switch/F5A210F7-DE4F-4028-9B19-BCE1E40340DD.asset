@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be51fb63421525348a7b8e189bffe032, type: 3}
+  m_Name: F5A210F7-DE4F-4028-9B19-BCE1E40340DD
+  m_EditorClassIdentifier: 
+  objectName: Mid
+  id: 1182670505
+  guid: F5A210F7-DE4F-4028-9B19-BCE1E40340DD
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 4d0cba4ddc01ad84695d7e852ed94ea3, type: 2}
