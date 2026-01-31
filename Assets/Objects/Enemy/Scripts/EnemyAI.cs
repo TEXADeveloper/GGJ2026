@@ -20,8 +20,11 @@ public class EnemyAI : MonoBehaviour
 
     [Header("Follow Player")]
     [SerializeField, Range(0f, 2f)] private float hurtDistance;
+    [SerializeField, Range(0f, 10f)] private float stunTime;
     private bool isFollowingPlayer = false;
     private bool playerLostTimer = false;
+    private bool enemyStunned = false;
+    private float stunTimer;
 
     [Header("Following Light")]
     private bool isFollowingLight = false;
@@ -32,13 +35,27 @@ public class EnemyAI : MonoBehaviour
         currentTarget = patrolPoints[Random.Range(0, patrolPoints.Length)];
     }
 
+    void Update()
+    {
+        if (enemyStunned)
+        {
+            stunTimer -= Time.deltaTime;
+
+            if (stunTimer <= 0)
+            {
+                enemyStunned = false;
+                stunTimer = 0;
+            }
+        }
+    }
+
     void LateUpdate()
     {
-        if (eyes.canSeePlayer || isFollowingPlayer)
+        if (!enemyStunned && (eyes.canSeePlayer || isFollowingPlayer))
         {
             followPlayer();
         }
-        else if (eyes.canSeeLight || isFollowingLight)
+        else if (!enemyStunned && (eyes.canSeeLight || isFollowingLight))
         {
             followLight();
         }
@@ -85,8 +102,9 @@ public class EnemyAI : MonoBehaviour
         if (distanceToTarget(transform.position, currentTarget.position) <= hurtDistance)
         {
             eyes.playerCollider.GetComponent<PlayerController>().Hurt();
-            //? reached Player
-            //agent.isStopped = true;
+
+            enemyStunned = true;
+            stunTimer = stunTime;
         }
     }
 
