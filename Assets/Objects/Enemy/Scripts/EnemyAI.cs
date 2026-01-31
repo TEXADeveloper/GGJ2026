@@ -1,7 +1,5 @@
-using System.IO;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.InputSystem;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -10,13 +8,13 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private EnemyEyes eyes;
     [SerializeField] private AK.Wwise.RTPC distanceParameter;
     private Transform currentTarget;
-    NavMeshPath path;
 
     [Header("Patrol")]
-    [SerializeField] private Transform[] patrolPoints;
+    [SerializeField] private Transform patrolPointsParent;
     [SerializeField, Range(0f, 2f)] private float minDistanceToTarget;
     [SerializeField, Range(0f, 10f)] private float minWaitingTime;
     [SerializeField, Range(0f, 10f)] private float maxWaitingTime;
+    private Transform[] patrolPoints;
     private float waitTimer;
 
     [Header("Follow Player")]
@@ -33,7 +31,8 @@ public class EnemyAI : MonoBehaviour
 
     void Start()
     {
-        path = agent.path;
+        patrolPoints = transform.GetComponentsInChildren<Transform>();
+
         currentTarget = patrolPoints[Random.Range(0, patrolPoints.Length)];
     }
 

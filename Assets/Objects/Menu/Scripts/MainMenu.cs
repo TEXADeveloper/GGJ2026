@@ -27,7 +27,7 @@ public class MainMenu : MonoBehaviour
 
     void Awake()
     {
-        // Guardamos la escala que tú configuraste en el Inspector antes de hacer nada
+        // Guardamos la escala que tï¿½ configuraste en el Inspector antes de hacer nada
         _creditsOriginalScale = creditsPanel.transform.localScale;
         _settingsOriginalScale = settingsPanel.transform.localScale;
     }
@@ -46,7 +46,7 @@ public class MainMenu : MonoBehaviour
         _main.SetActive(true);
     }
 
-    // ---------- LÓGICA DE ESCALADO CORREGIDA ----------
+    // ---------- Lï¿½GICA DE ESCALADO CORREGIDA ----------
     IEnumerator ScalePanel(GameObject panel, Vector3 targetScale, bool deactivateAtEnd)
     {
         float timer = 0;
@@ -70,7 +70,7 @@ public class MainMenu : MonoBehaviour
     {
         _main.SetActive(false);
         creditsPanel.SetActive(true);
-        StopCoroutine("ScalePanel"); // Detenemos solo la animación para no romper el Fade
+        StopCoroutine("ScalePanel"); // Detenemos solo la animaciï¿½n para no romper el Fade
         StartCoroutine(ScalePanel(creditsPanel, _creditsOriginalScale, false));
     }
 
@@ -95,7 +95,7 @@ public class MainMenu : MonoBehaviour
         StartCoroutine(ScalePanel(settingsPanel, Vector3.zero, true));
     }
 
-    // Métodos de Fade y Play (se mantienen igual)
+    // Mï¿½todos de Fade y Play (se mantienen igual)
     public void PlayGame() => StartCoroutine(FadeOutAndLoad());
 
     IEnumerator FadeIn()
@@ -120,7 +120,7 @@ public class MainMenu : MonoBehaviour
             fadeImage.color = new Color(0, 0, 0, t);
             yield return null;
         }
-        SceneManager.LoadScene(gameSceneName);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void QuitGame() => Application.Quit();

@@ -48,7 +48,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702571366795351211}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -589,6 +589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xrayFeature: {fileID: -4068472120469169748, guid: f288ae1f4751b564a96ac7587541f7a2, type: 2}
+  UIMask: {fileID: 0}
   objectParent: {fileID: 0}
   pickableObjects: []
 --- !u!114 &895016735686134936
@@ -627,7 +628,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotLight: {fileID: 2718823117506568869}
   lightCollider: {fileID: 2287532195006090841}
-  maxDistance: 30
+  maxDistance: 15
   mask:
     serializedVersion: 2
     m_Bits: 64

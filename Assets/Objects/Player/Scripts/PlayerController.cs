@@ -65,6 +65,6 @@ public class PlayerController : MonoBehaviour
 
     void OnDestroy()
     {
-        xrayFeature.SetActive(true);
+        xrayFeature.SetActive(false);
     }
 }
