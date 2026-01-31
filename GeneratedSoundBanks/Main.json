@@ -1,0 +1,118 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3161908922",
+    "Type": "User",
+    "GUID": "{FB88477A-D0F9-4195-965F-51475F130E7D}",
+    "Language": "SFX",
+    "Hash": "{0B33A6A0-4B46-76BE-EB39-93736191AF60}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
+    "ShortName": "Main",
+    "Path": "Main.bnk",
+    "Media": [
+     {
+      "Id": "1585545",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ggj2026_mainMusic_layer1_bowingMetal.wav",
+      "CachePath": "FC/{FCA750C2-4B24-AF86-A5D8-493649566D9E}.wem"
+     },
+     {
+      "Id": "20895418",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ggj2026_mainMusic_layer2_violin2Marcatto.wav",
+      "CachePath": "49/{49D1EB65-081F-3E46-0986-1AA42627B08D}.wem"
+     },
+     {
+      "Id": "57609123",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ggj2026_mainMusic_layer2_celliRepetition.wav",
+      "CachePath": "98/{988FDDF3-7CF2-3659-75DB-61146F6DEE1A}.wem"
+     },
+     {
+      "Id": "307360304",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ggj2026_mainMusic_layer2_violin1Marcatto.wav",
+      "CachePath": "90/{90753517-BDC7-BCF8-D94A-05B62B22C0DD}.wem"
+     },
+     {
+      "Id": "861370862",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ggj2026_mainMusic_layer1_bartok.wav",
+      "CachePath": "2B/{2BEBFCA5-ACDE-A60A-88A5-8ED0B959C281}.wem"
+     },
+     {
+      "Id": "1043049100",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ggj2026_mainMusic_base.wav",
+      "CachePath": "C8/{C866521B-A756-9EA8-7E9F-FED65B85AFBE}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1346240278",
+      "Name": "play_mainMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\play_mainMusic",
+      "GUID": "{F622B88C-9A19-4420-9207-4599E8FC7500}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "1585545"
+       },
+       {
+        "Id": "20895418"
+       },
+       {
+        "Id": "57609123"
+       },
+       {
+        "Id": "307360304"
+       },
+       {
+        "Id": "861370862"
+       },
+       {
+        "Id": "1043049100"
+       }
+      ]
+     },
+     {
+      "Id": "665673276",
+      "Name": "stop_mainMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\stop_mainMusic",
+      "GUID": "{D66CFD4C-6D0B-4924-B49B-3B77420BD122}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1240670792",
+      "Name": "Distance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Distance",
+      "GUID": "{3E1E1E22-2337-44D6-96D6-B30E91FD08D2}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{02B068E4-944A-99CF-88C8-77CE38CB52EC}"
+ }
+}
