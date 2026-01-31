@@ -27,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 1702571366795351211}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.7, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0.9, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.9, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8492255967157615848}
@@ -114,7 +114,7 @@ Transform:
   m_GameObject: {fileID: 1836995274831119960}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -309,10 +309,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 1
+  m_Radius: 0.3
+  m_Height: 1.8
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!114 &8513077657519019106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -460,10 +460,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   groundCheckPosition: {fileID: 3768929833001621230}
-  groundCheckLength: 0.15
-  speed: 7
+  groundCheckLength: 0.1
+  speed: 3
   speedMaskMultiplier: 1
-  sensibility: 35
+  sensibility: 0.4
   maskSensibilityMultiplier: 1
 --- !u!1 &7151962717318818101
 GameObject:
@@ -490,7 +490,7 @@ Transform:
   m_GameObject: {fileID: 7151962717318818101}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.7, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -44,7 +44,7 @@ public class InputController : MonoBehaviour
         pM = this.GetComponent<PlayerMovement>();
     }
 
-    void LateUpdate()
+    void Update()
     {
         movementInput();
         lookInput();

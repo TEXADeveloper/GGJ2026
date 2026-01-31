@@ -52,6 +52,10 @@ public class PlayerMovement : MonoBehaviour
         grounded = Physics.CheckSphere(groundCheckPosition.position, groundCheckLength, groundLayer);
 
         move();
+    }
+
+    void LateUpdate()
+    {
         moveCamera();
     }
 
