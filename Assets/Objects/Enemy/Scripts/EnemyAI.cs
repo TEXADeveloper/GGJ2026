@@ -8,6 +8,7 @@ public class EnemyAI : MonoBehaviour
     [Header("General")]
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private EnemyEyes eyes;
+    [SerializeField] private AK.Wwise.RTPC distanceParameter;
     private Transform currentTarget;
     NavMeshPath path;
 
@@ -19,6 +20,7 @@ public class EnemyAI : MonoBehaviour
     private float waitTimer;
 
     [Header("Follow Player")]
+    [SerializeField] private Transform playerTransform;
     [SerializeField, Range(0f, 2f)] private float hurtDistance;
     [SerializeField, Range(0f, 10f)] private float stunTime;
     private bool isFollowingPlayer = false;
@@ -47,6 +49,9 @@ public class EnemyAI : MonoBehaviour
                 stunTimer = 0;
             }
         }
+
+        float distanceToPlayer = distanceToTarget(transform.position, playerTransform.position);
+        distanceParameter.SetValue(this.gameObject, distanceToPlayer);
     }
 
     void LateUpdate()

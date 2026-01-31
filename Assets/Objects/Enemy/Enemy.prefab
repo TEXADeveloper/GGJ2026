@@ -182,6 +182,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 3558301607061443028}
   eyes: {fileID: 6856012698756723636}
+  distanceParameter:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 47da00bfa8f55c74db736dbb4b365190, type: 2}
   patrolPoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -190,6 +194,7 @@ MonoBehaviour:
   minDistanceToTarget: 0.4
   minWaitingTime: 1
   maxWaitingTime: 5
+  playerTransform: {fileID: 0}
   hurtDistance: 1.5
   stunTime: 5
 --- !u!1 &7151962717318818101
