@@ -1,6 +1,7 @@
 using System.IO;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.InputSystem;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class EnemyAI : MonoBehaviour
     private float waitTimer;
 
     [Header("Follow Player")]
+    [SerializeField, Range(0f, 2f)] private float hurtDistance;
     private bool isFollowingPlayer = false;
     private bool playerLostTimer = false;
 
@@ -63,7 +65,6 @@ public class EnemyAI : MonoBehaviour
         }
         else
         {
-            Debug.Log("Los Player");
             //? is following though it cannot see him
             if (!playerLostTimer)
             {
@@ -81,8 +82,9 @@ public class EnemyAI : MonoBehaviour
             }
         }
 
-        if (distanceToTarget(transform.position, currentTarget.position) <= minDistanceToTarget)
+        if (distanceToTarget(transform.position, currentTarget.position) <= hurtDistance)
         {
+            eyes.playerCollider.GetComponent<PlayerController>().Hurt();
             //? reached Player
             //agent.isStopped = true;
         }

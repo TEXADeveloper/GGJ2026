@@ -181,6 +181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 3558301607061443028}
+  eyes: {fileID: 6856012698756723636}
   patrolPoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -189,7 +190,7 @@ MonoBehaviour:
   minDistanceToTarget: 0.4
   minWaitingTime: 1
   maxWaitingTime: 5
-  playerTransform: {fileID: 0}
+  hurtDistance: 1.5
 --- !u!1 &7151962717318818101
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,7 +321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b35c0cc0b45a604e9f4d7ee36c4d2f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angle: 25
+  angle: 90
   maxDistance: 15
   playerLayer:
     serializedVersion: 2

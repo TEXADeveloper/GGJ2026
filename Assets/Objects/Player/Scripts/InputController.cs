@@ -10,6 +10,7 @@ public class InputController : MonoBehaviour
 
     PlayerMovement pM;
     PlayerFlashLight pFL;
+    PlayerInteraction pI;
 
     bool paused = false;
 
@@ -45,6 +46,7 @@ public class InputController : MonoBehaviour
     {
         pM = this.GetComponent<PlayerMovement>();
         pFL = this.GetComponent<PlayerFlashLight>();
+        pI = this.GetComponent<PlayerInteraction>();
     }
 
     void Update()
@@ -78,8 +80,7 @@ public class InputController : MonoBehaviour
 
     public void interact(InputAction.CallbackContext ctx)
     {
-        //interact
-        Debug.Log("Interact");
+        pI.Interact();
     }
 
     public void pause(InputAction.CallbackContext ctx)
