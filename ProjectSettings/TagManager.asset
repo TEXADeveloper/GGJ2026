@@ -41,6 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Mask
+    uniqueID: 1270972641
+    locked: 0
+  - name: Pickables
+    uniqueID: 2379732301
+    locked: 0
+  - name: UI
+    uniqueID: 2853596279
+    locked: 0
   m_RenderingLayers:
   - Default
   - Light Layer 1
