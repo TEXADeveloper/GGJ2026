@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{FB88477A-D0F9-4195-965F-51475F130E7D}",
     "Language": "SFX",
-    "Hash": "{F030055F-8A22-FF0C-9926-D3C9E04C09B1}",
+    "Hash": "{1C31A506-2EAB-109C-C1CB-6E9396195AC2}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -24,12 +24,36 @@
       "CachePath": "FC/{FCA750C2-4B24-AF86-A5D8-493649566D9E}.wem"
      },
      {
+      "Id": "8086561",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "playerFootsteps_carpet_var7.wav",
+      "CachePath": "1E/{1E002FB0-6F8B-5B06-51EE-0C25E2F0D288}.wem"
+     },
+     {
       "Id": "20895418",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ggj2026_mainMusic_layer2_violin2Marcatto.wav",
       "CachePath": "49/{49D1EB65-081F-3E46-0986-1AA42627B08D}.wem"
+     },
+     {
+      "Id": "34557856",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "playerFootsteps_concrete_var3.wav",
+      "CachePath": "FF/{FFF33864-1D4C-F68E-152B-B60F594B1C2E}.wem"
+     },
+     {
+      "Id": "38266933",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "playerFootsteps_carpet_var10.wav",
+      "CachePath": "B7/{B7B86CA6-298B-62ED-45B3-A8BB27A2FE2B}.wem"
      },
      {
       "Id": "57609123",
@@ -40,12 +64,156 @@
       "CachePath": "98/{988FDDF3-7CF2-3659-75DB-61146F6DEE1A}.wem"
      },
      {
+      "Id": "106488395",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "playerFootsteps_concrete_var7.wav",
+      "CachePath": "3E/{3EBD8B48-36B8-9EFD-1780-D3BB9503797E}.wem"
+     },
+     {
+      "Id": "191099475",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "playerFootsteps_carpet_var9.wav",
+      "CachePath": "A8/{A896DA53-541B-2C9C-9F47-B18A33495727}.wem"
+     },
+     {
+      "Id": "224002733",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "playerFootsteps_carpet_var1.wav",
+      "CachePath": "DF/{DFB8AA92-8320-BAF7-C2F8-D4894EE7CE47}.wem"
+     },
+     {
       "Id": "307360304",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ggj2026_mainMusic_layer2_violin1Marcatto.wav",
       "CachePath": "90/{90753517-BDC7-BCF8-D94A-05B62B22C0DD}.wem"
+     },
+     {
+      "Id": "437063279",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "playerFootsteps_concrete_var8.wav",
+      "CachePath": "88/{881BFDC4-BAC2-4828-E087-6E04BC0B125C}.wem"
+     },
+     {
+      "Id": "438177277",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "playerFootsteps_concrete_var2.wav",
+      "CachePath": "BA/{BAC9AB2F-AD75-1173-D1D9-04402B8CA29E}.wem"
+     },
+     {
+      "Id": "568006993",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "playerFootsteps_concrete_var5.wav",
+      "CachePath": "1B/{1B22219B-534C-8F41-D3DA-DF0B8F334247}.wem"
+     },
+     {
+      "Id": "603272388",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "playerFootsteps_carpet_var4.wav",
+      "CachePath": "10/{108D2D48-DDAC-AC6B-1C89-D847727E8049}.wem"
+     },
+     {
+      "Id": "641726216",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "playerFootsteps_carpet_var8.wav",
+      "CachePath": "BF/{BF714A64-DCEC-CA86-8FCA-21E9447521E1}.wem"
+     },
+     {
+      "Id": "655969762",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "playerFootsteps_carpet_var5.wav",
+      "CachePath": "1C/{1CA7E4D8-B6B5-EFF5-E928-3388758FF0B6}.wem"
+     },
+     {
+      "Id": "661870566",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "playerFootsteps_concrete_var1.wav",
+      "CachePath": "E4/{E4E93E24-EBDC-9357-BB70-A9090C6AAB41}.wem"
+     },
+     {
+      "Id": "672974534",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "playerFootsteps_concrete_var4.wav",
+      "CachePath": "03/{032B35B6-EAB4-027C-9F8C-122D8E861431}.wem"
+     },
+     {
+      "Id": "679356120",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "playerFootsteps_concrete_var9.wav",
+      "CachePath": "BA/{BAAF471D-AD14-CE17-CA54-3586F0A753EF}.wem"
+     },
+     {
+      "Id": "684265968",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "playerFootsteps_concrete_var6.wav",
+      "CachePath": "75/{75A86AD4-3290-1C50-2DCB-563965BEAD4A}.wem"
+     },
+     {
+      "Id": "703692284",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "enemy_ghost_floatLoop.wav",
+      "CachePath": "90/{901B0986-2EB2-A04F-6EF1-CCEB0A758ECF}.wem"
+     },
+     {
+      "Id": "774998860",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "playerFootsteps_carpet_var3.wav",
+      "CachePath": "55/{551C4C46-71B1-F6E4-EC97-904E0FA74709}.wem"
+     },
+     {
+      "Id": "781419912",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "playerFootsteps_carpet_var6.wav",
+      "CachePath": "2D/{2DC79949-8185-DB1D-7662-CDBFB198A0CC}.wem"
+     },
+     {
+      "Id": "816181268",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "playerFootsteps_concrete_var10.wav",
+      "CachePath": "54/{542FC6D3-9AB0-4FF5-B1B3-1A34136E3789}.wem"
+     },
+     {
+      "Id": "838756543",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "playerFootsteps_carpet_var2.wav",
+      "CachePath": "C3/{C3053814-B29C-143C-C816-27B65668D214}.wem"
      },
      {
       "Id": "861370862",
@@ -65,6 +233,18 @@
      }
     ],
     "Events": [
+     {
+      "Id": "7578887",
+      "Name": "play_ghostHover",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Ghost\\play_ghostHover",
+      "GUID": "{397458F5-EC83-4B4A-B58D-334F804DB1D9}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "703692284"
+       }
+      ]
+     },
      {
       "Id": "1346240278",
       "Name": "play_mainMusic",
@@ -93,6 +273,97 @@
       ]
      },
      {
+      "Id": "1805011878",
+      "Name": "play_playerFootsteps",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Player\\play_playerFootsteps",
+      "GUID": "{44AADF82-B7F8-487A-A8B5-0CE7A8A8F18A}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.23742163",
+      "DurationMax": "0.5861959",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1834394558",
+         "Id": "841620460",
+         "GUID": "{97D86806-4F84-4978-A628-23504CBBCE05}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "34557856"
+         },
+         {
+          "Id": "106488395"
+         },
+         {
+          "Id": "437063279"
+         },
+         {
+          "Id": "438177277"
+         },
+         {
+          "Id": "568006993"
+         },
+         {
+          "Id": "661870566"
+         },
+         {
+          "Id": "672974534"
+         },
+         {
+          "Id": "679356120"
+         },
+         {
+          "Id": "684265968"
+         },
+         {
+          "Id": "816181268"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1834394558",
+         "Id": "2412606308",
+         "GUID": "{AC6D0745-EEBB-4ECE-AC73-6ED57DF0549F}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "8086561"
+         },
+         {
+          "Id": "38266933"
+         },
+         {
+          "Id": "191099475"
+         },
+         {
+          "Id": "224002733"
+         },
+         {
+          "Id": "603272388"
+         },
+         {
+          "Id": "641726216"
+         },
+         {
+          "Id": "655969762"
+         },
+         {
+          "Id": "774998860"
+         },
+         {
+          "Id": "781419912"
+         },
+         {
+          "Id": "838756543"
+         }
+        ]
+       }
+      ]
+     },
+     {
       "Id": "665673276",
       "Name": "stop_mainMusic",
       "ObjectPath": "\\Events\\Default Work Unit\\Music\\stop_mainMusic",
@@ -110,9 +381,31 @@
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Distance",
       "GUID": "{3E1E1E22-2337-44D6-96D6-B30E91FD08D2}"
      }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "1834394558",
+      "Name": "Surface",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Surface",
+      "GUID": "{2FC3C63B-F8A4-48E3-81EC-3D83EC84BBC4}",
+      "Switches": [
+       {
+        "Id": "841620460",
+        "Name": "Concrete",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Concrete",
+        "GUID": "{97D86806-4F84-4978-A628-23504CBBCE05}"
+       },
+       {
+        "Id": "2412606308",
+        "Name": "Carpet",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Carpet",
+        "GUID": "{AC6D0745-EEBB-4ECE-AC73-6ED57DF0549F}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{F37DFB42-1742-3E1A-E4A8-10E963ACC388}"
+  "FileHash": "{4E1908F4-6B36-5E2C-559B-5359DB0417E9}"
  }
 }

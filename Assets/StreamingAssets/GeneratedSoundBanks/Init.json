@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{AEB50EA1-B007-5BD0-7749-A369D4B8CEF9}",
+    "Hash": "{C2D4A481-0750-9973-E737-DF428FD2D860}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -130,64 +130,24 @@
       "GUID": "{EDA87B19-73AA-40A0-9F19-2073606DB710}"
      }
     ],
-    "StateGroups": [
-     {
-      "Id": "1240670792",
-      "Name": "Distance",
-      "ObjectPath": "\\States\\Default Work Unit\\Distance",
-      "GUID": "{4867FDED-CC30-435D-9EBE-F0FE1398CF65}",
-      "States": [
-       {
-        "Id": "748895195",
-        "Name": "None",
-        "ObjectPath": "\\States\\Default Work Unit\\Distance\\None",
-        "GUID": "{E943CAEE-24F1-41A0-A47C-FA0F478C3964}"
-       },
-       {
-        "Id": "1133794587",
-        "Name": "Near",
-        "ObjectPath": "\\States\\Default Work Unit\\Distance\\Near",
-        "GUID": "{D306E317-EE20-443B-9D86-E43C7C719C0B}"
-       },
-       {
-        "Id": "1182670505",
-        "Name": "Mid",
-        "ObjectPath": "\\States\\Default Work Unit\\Distance\\Mid",
-        "GUID": "{898695C8-661B-4673-9E55-29D513B90CFF}"
-       },
-       {
-        "Id": "1183803292",
-        "Name": "Far",
-        "ObjectPath": "\\States\\Default Work Unit\\Distance\\Far",
-        "GUID": "{80B12718-B158-4E23-83BA-894F628CACE6}"
-       }
-      ]
-     }
-    ],
     "SwitchGroups": [
      {
-      "Id": "1240670792",
-      "Name": "Distance",
-      "ObjectPath": "\\Switches\\Default Work Unit\\Distance",
-      "GUID": "{B3EA1B6C-C9CA-46A8-902F-15229A787C06}",
+      "Id": "1834394558",
+      "Name": "Surface",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Surface",
+      "GUID": "{2FC3C63B-F8A4-48E3-81EC-3D83EC84BBC4}",
       "Switches": [
        {
-        "Id": "1133794587",
-        "Name": "Near",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Distance\\Near",
-        "GUID": "{177024A0-25A5-4F00-96AD-8F915FE8A173}"
+        "Id": "841620460",
+        "Name": "Concrete",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Concrete",
+        "GUID": "{97D86806-4F84-4978-A628-23504CBBCE05}"
        },
        {
-        "Id": "1182670505",
-        "Name": "Mid",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Distance\\Mid",
-        "GUID": "{F5A210F7-DE4F-4028-9B19-BCE1E40340DD}"
-       },
-       {
-        "Id": "1183803292",
-        "Name": "Far",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Distance\\Far",
-        "GUID": "{FCCD62DC-7405-46EA-A8FC-C83B7CD1F5B7}"
+        "Id": "2412606308",
+        "Name": "Carpet",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Carpet",
+        "GUID": "{AC6D0745-EEBB-4ECE-AC73-6ED57DF0549F}"
        }
       ]
      }
@@ -671,6 +631,6 @@
     ]
    }
   ],
-  "FileHash": "{92BE7856-3C3E-9F1A-D0D6-22BF28EBBF79}"
+  "FileHash": "{2F0D162E-7E18-F1D3-7587-D45F688D9EA1}"
  }
 }

@@ -13,40 +13,24 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_GHOSTHOVER = 7578887U;
         static const AkUniqueID PLAY_MAINMUSIC = 1346240278U;
+        static const AkUniqueID PLAY_PLAYERFOOTSTEPS = 1805011878U;
         static const AkUniqueID STOP_MAINMUSIC = 665673276U;
     } // namespace EVENTS
 
-    namespace STATES
-    {
-        namespace DISTANCE
-        {
-            static const AkUniqueID GROUP = 1240670792U;
-
-            namespace STATE
-            {
-                static const AkUniqueID FAR = 1183803292U;
-                static const AkUniqueID MID = 1182670505U;
-                static const AkUniqueID NEAR = 1133794587U;
-                static const AkUniqueID NONE = 748895195U;
-            } // namespace STATE
-        } // namespace DISTANCE
-
-    } // namespace STATES
-
     namespace SWITCHES
     {
-        namespace DISTANCE
+        namespace SURFACE
         {
-            static const AkUniqueID GROUP = 1240670792U;
+            static const AkUniqueID GROUP = 1834394558U;
 
             namespace SWITCH
             {
-                static const AkUniqueID FAR = 1183803292U;
-                static const AkUniqueID MID = 1182670505U;
-                static const AkUniqueID NEAR = 1133794587U;
+                static const AkUniqueID CARPET = 2412606308U;
+                static const AkUniqueID CONCRETE = 841620460U;
             } // namespace SWITCH
-        } // namespace DISTANCE
+        } // namespace SURFACE
 
     } // namespace SWITCHES
 
