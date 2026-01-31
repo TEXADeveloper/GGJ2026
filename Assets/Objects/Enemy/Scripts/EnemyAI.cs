@@ -5,16 +5,20 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
+    [Header("General")]
     [SerializeField] private NavMeshAgent agent;
     private Transform currentTarget;
+    private bool isPlayerLocated = false;
 
+    [Header("Patrol")]
     [SerializeField] private Transform[] patrolPoints;
     [SerializeField, Range(0f, 2f)] private float minDistanceToTarget;
     [SerializeField, Range(0f, 10f)] private float minWaitingTime;
     [SerializeField, Range(0f, 10f)] private float maxWaitingTime;
     private float waitTimer;
 
-    private bool isPlayerLocated = false;
+    [Header("Follow Player")]
+    [SerializeField] private Transform playerTransform;
 
     void Start()
     {
@@ -25,7 +29,10 @@ public class EnemyAI : MonoBehaviour
     {
         if (isPlayerLocated)
         {
-            //Do Something
+            currentTarget = playerTransform;
+
+            //? Start moving
+            agent.SetDestination(currentTarget.position);
         }
         else
         {
