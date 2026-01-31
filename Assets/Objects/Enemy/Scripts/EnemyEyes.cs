@@ -42,16 +42,16 @@ public class EnemyEyes : MonoBehaviour
                 float distanceToTarget = Vector3.Distance(transform.position, playerCollider.transform.position);
 
                 if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstacleLayer))
-                {
                     canSeePlayer = true;
-                    canSeeLight = false;
-                }
                 else
                     canSeePlayer = false;
             }
             else
                 canSeePlayer = false;
-        }
+        } else
+            canSeePlayer = false;
+
+
         if (!canSeePlayer && colliders.Contains(lightCollider))
         {
             Vector3 directionToTarget = (lightCollider.transform.position - transform.position).normalized;
@@ -67,6 +67,7 @@ public class EnemyEyes : MonoBehaviour
             }
             else
                 canSeeLight = false;
-        }
+        } else
+            canSeeLight = false;
     }
 }
