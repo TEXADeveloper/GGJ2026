@@ -158,4 +158,9 @@ public class EnemyAI : MonoBehaviour
 
         return Vector3.Distance(horizontalFrom, horizontalTo);
     }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(transform.position, hurtDistance);
+    }
 }

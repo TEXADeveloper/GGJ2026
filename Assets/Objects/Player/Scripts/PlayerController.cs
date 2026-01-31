@@ -1,7 +1,10 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Mask Functionality")]
+    [SerializeField] private ScriptableRendererFeature xrayFeature;
     private bool hasMaskOn = false;
 
     void Start()
@@ -16,6 +19,7 @@ public class PlayerController : MonoBehaviour
             return false;
         
         hasMaskOn = true;
+        xrayFeature.SetActive(true);
         return true;
     }
 
@@ -26,6 +30,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("MaskDestroyed");
             hasMaskOn = false;
+            xrayFeature.SetActive(false);
             return;
         }
         #if UNITY_EDITOR
