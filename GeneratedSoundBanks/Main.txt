@@ -1,0 +1,15 @@
+Event	ID	Name			Wwise Object Path	Notes
+	665673276	stop_mainMusic			\Default Work Unit\Music\stop_mainMusic	
+	1346240278	play_mainMusic			\Default Work Unit\Music\play_mainMusic	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1240670792	Distance			\Default Work Unit\Distance	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1585545	ggj2026_mainMusic_layer1_bowingMetal	.cache\FC\{FCA750C2-4B24-AF86-A5D8-493649566D9E}.wem		\Containers\Music\MainMusic\MainMusic\ggj2026_mainMusic_layer1_bowingMetal		1584852
+	20895418	ggj2026_mainMusic_layer2_violin2Marcatto	.cache\49\{49D1EB65-081F-3E46-0986-1AA42627B08D}.wem		\Containers\Music\MainMusic\MainMusic\ggj2026_mainMusic_layer2_violin2Marcatto		2290413
+	57609123	ggj2026_mainMusic_layer2_celliRepetition	.cache\98\{988FDDF3-7CF2-3659-75DB-61146F6DEE1A}.wem		\Containers\Music\MainMusic\MainMusic\ggj2026_mainMusic_layer2_celliRepetition		1922621
+	307360304	ggj2026_mainMusic_layer2_violin1Marcatto	.cache\90\{90753517-BDC7-BCF8-D94A-05B62B22C0DD}.wem		\Containers\Music\MainMusic\MainMusic\ggj2026_mainMusic_layer2_violin1Marcatto		2191364
+	861370862	ggj2026_mainMusic_layer1_bartok	.cache\2B\{2BEBFCA5-ACDE-A60A-88A5-8ED0B959C281}.wem		\Containers\Music\MainMusic\MainMusic\ggj2026_mainMusic_layer1_bartok		2310850
+	1043049100	ggj2026_mainMusic_base	.cache\C8\{C866521B-A756-9EA8-7E9F-FED65B85AFBE}.wem		\Containers\Music\MainMusic\MainMusic\ggj2026_mainMusic_base		964599
+
