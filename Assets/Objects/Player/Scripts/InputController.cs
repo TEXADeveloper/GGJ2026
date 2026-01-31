@@ -9,6 +9,8 @@ public class InputController : MonoBehaviour
     private InputAction lookAction;
 
     PlayerMovement pM;
+    PlayerFlashLight pFL;
+
     bool paused = false;
 
     void Awake()
@@ -42,9 +44,10 @@ public class InputController : MonoBehaviour
     void Start()
     {
         pM = this.GetComponent<PlayerMovement>();
+        pFL = this.GetComponent<PlayerFlashLight>();
     }
 
-    void LateUpdate()
+    void Update()
     {
         movementInput();
         lookInput();
@@ -70,8 +73,7 @@ public class InputController : MonoBehaviour
     
     public void flashlight(InputAction.CallbackContext ctx)
     {
-        //flashlight
-        Debug.Log("flashlight");
+        pFL.Toggle();
     }
 
     public void interact(InputAction.CallbackContext ctx)
