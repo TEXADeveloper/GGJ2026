@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerFlashLight : MonoBehaviour
 {
+    [SerializeField] private SoundTrigger trigger;
     [SerializeField] private Transform spotLight;
     [SerializeField] private Transform lightCollider;
     [SerializeField] private float maxDistance;
@@ -18,6 +19,14 @@ public class PlayerFlashLight : MonoBehaviour
         lightEnabled = !lightEnabled;
         spotLight.gameObject.SetActive(lightEnabled);
         lightCollider.gameObject.SetActive(lightEnabled);
+        if (lightEnabled)
+        {
+            trigger.PlaySound("FlashOn");
+        }
+        else
+        {
+            trigger.PlaySound("FlashOff");
+        }
     }
 
     void LateUpdate()

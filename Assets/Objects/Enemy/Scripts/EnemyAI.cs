@@ -8,6 +8,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private EnemyEyes eyes;
     [SerializeField] private AK.Wwise.RTPC distanceParameter;
+    [SerializeField] private SoundTrigger soundTrigger;
     [SerializeField] private float speed;
     [SerializeField] private float speedIncrement;
     private Transform currentTarget;
@@ -35,7 +36,7 @@ public class EnemyAI : MonoBehaviour
 
     void OnEnable()
     {
-        PlayerController.HasMask += runFaster;
+        PlayerController.RunFaster += runFaster;
 
         agent.speed = speed;
 
@@ -47,7 +48,13 @@ public class EnemyAI : MonoBehaviour
 
     void OnDisable()
     {
-        PlayerController.HasMask -= runFaster;
+        PlayerController.RunFaster -= runFaster;
+        distanceParameter.SetGlobalValue(0);
+    }
+
+    void Start()
+    {
+        soundTrigger.PlaySound("Hover");
     }
 
     private void runFaster(bool mask)

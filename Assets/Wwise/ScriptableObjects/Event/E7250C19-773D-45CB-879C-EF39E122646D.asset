@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a7327b758bcdf4d97673e5eec80f46, type: 3}
+  m_Name: E7250C19-773D-45CB-879C-EF39E122646D
+  m_EditorClassIdentifier: 
+  objectName: play_ghostVoiceCatchPlayer
+  id: 3959760815
+  guid: E7250C19-773D-45CB-879C-EF39E122646D
+  IsInUserDefinedSoundBank: 1

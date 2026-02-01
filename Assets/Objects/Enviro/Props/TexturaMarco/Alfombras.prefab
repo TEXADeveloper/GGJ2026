@@ -11,7 +11,10 @@ GameObject:
   - component: {fileID: 8832639826418496426}
   - component: {fileID: 3477836287289660349}
   - component: {fileID: 3319749781944406429}
-  m_Layer: 0
+  - component: {fileID: 5665420031841252888}
+  - component: {fileID: 8014519773072724118}
+  - component: {fileID: 3495698131636111990}
+  m_Layer: 14
   m_Name: Plane.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,6 +89,68 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5665420031841252888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795627670640619560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55f7a31e60ce37d43a7687347423e91e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundSwitch: {fileID: 8014519773072724118}
+--- !u!114 &8014519773072724118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795627670640619560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9eb4fa7cc316e2488d17cab9863c71b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  switches:
+    dictionary:
+    - Key: Floor
+      Value:
+        idInternal: 0
+        valueGuidInternal: 
+        groupIdInternal: 0
+        groupGuidInternal: 
+        WwiseObjectReference: {fileID: 11400000, guid: 04c05994f790c6545a624bad5061f518, type: 2}
+    - Key: Carpet
+      Value:
+        idInternal: 0
+        valueGuidInternal: 
+        groupIdInternal: 0
+        groupGuidInternal: 
+        WwiseObjectReference: {fileID: 11400000, guid: 0b0ce290bcf099049bc49c62d12390f8, type: 2}
+--- !u!65 &3495698131636111990
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795627670640619560}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.020122292, y: 0.021266276, z: 0.0047262693}
+  m_Center: {x: -0.0010474285, y: -0.0007270122, z: 0.0016572995}
 --- !u!1 &5880286484052330515
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,7 +162,7 @@ GameObject:
   - component: {fileID: 5594064492305287892}
   - component: {fileID: 7254206312058579554}
   - component: {fileID: 592943456870565911}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Plane.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +246,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3209589577737588799}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Alfombras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -217,7 +282,7 @@ GameObject:
   - component: {fileID: 74799857586229156}
   - component: {fileID: 1115612367471504786}
   - component: {fileID: 6529700951049669875}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}

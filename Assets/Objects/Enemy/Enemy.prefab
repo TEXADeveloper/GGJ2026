@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 5944060706142728265}
   - component: {fileID: 3558301607061443028}
   - component: {fileID: 85213184077436979}
+  - component: {fileID: 5622852160160888547}
+  - component: {fileID: 1677515933232602682}
+  - component: {fileID: 5136159691761607682}
   m_Layer: 8
   m_Name: Enemy
   m_TagString: Untagged
@@ -101,6 +104,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 47da00bfa8f55c74db736dbb4b365190, type: 2}
+  soundTrigger: {fileID: 1677515933232602682}
   speed: 2.15
   speedIncrement: 0.25
   patrolPointsParent: {fileID: 0}
@@ -111,6 +115,91 @@ MonoBehaviour:
   hurtDistance: 1.5
   stunTime: 5
   keepFollowingTime: 3
+--- !u!114 &5622852160160888547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4168977904918702230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c326f60f850ba4d9f089586757b886, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 0}
+  soundTrigger: {fileID: 1677515933232602682}
+  soundSwitch: {fileID: 5136159691761607682}
+  minRandom: 5
+  maxRandom: 10
+  minDistance: 5
+  maxDistance: 25
+  minTalkProbability: 0.1
+  maxTalkProbability: 0.85
+--- !u!114 &1677515933232602682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4168977904918702230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b30cf3473a57fc544b52150083fca15b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+    dictionary:
+    - Key: Breath
+      Value:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 11400000, guid: b7e1152dc5613b141962204906f688a0, type: 2}
+    - Key: Hover
+      Value:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 11400000, guid: 7d50c85b7d79e214184445a4b3268bac, type: 2}
+    - Key: Talk
+      Value:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 11400000, guid: d617fe2ea4712374295098f16940fa38, type: 2}
+--- !u!114 &5136159691761607682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4168977904918702230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9eb4fa7cc316e2488d17cab9863c71b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  switches:
+    dictionary:
+    - Key: Far
+      Value:
+        idInternal: 0
+        valueGuidInternal: 
+        groupIdInternal: 0
+        groupGuidInternal: 
+        WwiseObjectReference: {fileID: 11400000, guid: d2cedc3dbaf42dd4b9519e188b4ea440, type: 2}
+    - Key: Mid
+      Value:
+        idInternal: 0
+        valueGuidInternal: 
+        groupIdInternal: 0
+        groupGuidInternal: 
+        WwiseObjectReference: {fileID: 11400000, guid: 5c380aae3aa6da948bdbdeb3d476c14e, type: 2}
+    - Key: Near
+      Value:
+        idInternal: 0
+        valueGuidInternal: 
+        groupIdInternal: 0
+        groupGuidInternal: 
+        WwiseObjectReference: {fileID: 11400000, guid: ee38d014b1ee55a4099d49bd41ec5287, type: 2}
 --- !u!1 &4263971939635195282
 GameObject:
   m_ObjectHideFlags: 0

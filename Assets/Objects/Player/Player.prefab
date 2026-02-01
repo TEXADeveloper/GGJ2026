@@ -595,6 +595,7 @@ MonoBehaviour:
   display: {fileID: 0}
   jumpScare: {fileID: 0}
   anim: {fileID: 4599808172567627039}
+  soundTrigger: {fileID: 5551247129243071511}
   soundSwitch: {fileID: 219546694100251478}
   canLeave: 0
   xrayFeature: {fileID: -4068472120469169748, guid: f288ae1f4751b564a96ac7587541f7a2, type: 2}
@@ -635,6 +636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a034f9f701a0eff448df2009f7f48f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trigger: {fileID: 5551247129243071511}
   spotLight: {fileID: 2718823117506568869}
   lightCollider: {fileID: 2287532195006090841}
   maxDistance: 15
@@ -694,7 +696,32 @@ MonoBehaviour:
       Value:
         idInternal: 0
         valueGuidInternal: 
-        WwiseObjectReference: {fileID: 11400000, guid: 9418793c034cccc47904249c18f7ff78, type: 2}
+        WwiseObjectReference: {fileID: 11400000, guid: 6bb488e3b67ec1046b0b7006032c7112, type: 2}
+    - Key: FlashOn
+      Value:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 11400000, guid: 21b03fbbedc16d44b8f544247fecd896, type: 2}
+    - Key: FlashOff
+      Value:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 11400000, guid: 19186883020409847b3c8de0b1a38925, type: 2}
+    - Key: Mask
+      Value:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 11400000, guid: c62cf6cd1ac09fb48974a96456544916, type: 2}
+    - Key: Object
+      Value:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 11400000, guid: 7677ec843aec1384fba2095c5a14149e, type: 2}
+    - Key: Hurt
+      Value:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 11400000, guid: 3e6ba6e8ed5f03e4c8b9e16364dfdf57, type: 2}
 --- !u!114 &219546694100251478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -715,7 +742,7 @@ MonoBehaviour:
         valueGuidInternal: 
         groupIdInternal: 0
         groupGuidInternal: 
-        WwiseObjectReference: {fileID: 11400000, guid: c201bec041808f146ba4224092f602bb, type: 2}
+        WwiseObjectReference: {fileID: 11400000, guid: 04c05994f790c6545a624bad5061f518, type: 2}
 --- !u!1 &6945988632341727630
 GameObject:
   m_ObjectHideFlags: 0

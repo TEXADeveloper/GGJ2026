@@ -1,18 +1,20 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
-using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
     public static event Action<bool> HasMask;
+    public static event Action<bool> RunFaster;
     public static event Action canEscape;
 
     [SerializeField] private ObjectDisplay display;
     [SerializeField] private JumpScare jumpScare;
     [SerializeField] private Animator anim;
+    [SerializeField] private SoundTrigger soundTrigger;
     [SerializeField] private SoundSwitch soundSwitch;
     [SerializeField] public bool canLeave = false;
 
@@ -32,7 +34,12 @@ public class PlayerController : MonoBehaviour
         soundSwitch.Switch("Floor");
         Debug.Log("Floor");
 
+        StartCoroutine(findObject());
+    }
 
+    private IEnumerator findObject()
+    {
+        yield return null;
         pickableObjects = objectParent.GetComponentsInChildren<PickableObject>().ToList<PickableObject>();
         display.SetMax(pickableObjects.Count);
     }
@@ -45,6 +52,8 @@ public class PlayerController : MonoBehaviour
         hasMaskOn = true;
         xrayFeature.SetActive(true);
         HasMask?.Invoke(true);
+        RunFaster?.Invoke(true);
+        soundTrigger.PlaySound("Mask");
         return true;
     }
 
@@ -54,7 +63,8 @@ public class PlayerController : MonoBehaviour
         {
             pickableObjects.Remove(pickable);
             display.PickObject();
-            HasMask?.Invoke(true);
+            RunFaster?.Invoke(true);
+            soundTrigger.PlaySound("Object");
 
             if (pickableObjects.Count <= 0)
             {
@@ -73,9 +83,11 @@ public class PlayerController : MonoBehaviour
             hasMaskOn = false;
             xrayFeature.SetActive(false);
             HasMask?.Invoke(false);
+            RunFaster?.Invoke(false);
             anim.SetTrigger("Shake");
             return;
         }
+        soundTrigger.PlaySound("Hurt");
         jumpScare.LoseGame();
     }
 
