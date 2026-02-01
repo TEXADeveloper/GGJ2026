@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3ACA2E80-D68E-431E-9323-8B88AC4AC652}" SchemaVersion="133">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{3ACA2E80-D68E-431E-9323-8B88AC4AC652}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Surface" ID="{2FC3C63B-F8A4-48E3-81EC-3D83EC84BBC4}">
+					<ChildrenList>
+						<Switch Name="Concrete" ID="{97D86806-4F84-4978-A628-23504CBBCE05}"/>
+						<Switch Name="Carpet" ID="{AC6D0745-EEBB-4ECE-AC73-6ED57DF0549F}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Distance" ID="{EE772053-0774-4D4E-B0F6-06F16A2A5E79}">
+					<ChildrenList>
+						<Switch Name="Far" ID="{C9B11C06-DDF2-4E34-9DB1-03FB260BD5B1}"/>
+						<Switch Name="Mid" ID="{F6E93644-8038-42D9-8456-946B474133D7}"/>
+						<Switch Name="Near" ID="{CFDBB7F4-0001-425F-9CD6-701BA4D7BE7E}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
