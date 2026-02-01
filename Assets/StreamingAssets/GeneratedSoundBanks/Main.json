@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{FB88477A-D0F9-4195-965F-51475F130E7D}",
     "Language": "SFX",
-    "Hash": "{858C584A-6161-6534-EE54-535A9DEE828D}",
+    "Hash": "{A472BD7A-7F16-1570-152E-5D4188553B7F}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -166,6 +166,14 @@
       "Location": "Memory",
       "ShortName": "playerFlashlight_turnOff.wav",
       "CachePath": "08/{08E2F9E9-F152-B2D8-92F4-9AD38973B1FB}.wem"
+     },
+     {
+      "Id": "344039548",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mainMenu_buttonClick.wav",
+      "CachePath": "C7/{C7150EDE-1563-5F86-0E24-359815FF1F73}.wem"
      },
      {
       "Id": "368748090",
@@ -486,6 +494,14 @@
       "Location": "Memory",
       "ShortName": "ggj2026_mainMusic_base.wav",
       "CachePath": "C8/{C866521B-A756-9EA8-7E9F-FED65B85AFBE}.wem"
+     },
+     {
+      "Id": "1051584430",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mainMenu_buttonHover.wav",
+      "CachePath": "EC/{EC3A8C5D-50EA-DC27-6B6E-A74AF29D211B}.wem"
      }
     ],
     "Events": [
@@ -645,6 +661,34 @@
           "Id": "863378974"
          }
         ]
+       }
+      ]
+     },
+     {
+      "Id": "2940935649",
+      "Name": "play_mainMenu_buttonClick",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Main Menu\\play_mainMenu_buttonClick",
+      "GUID": "{31F3CD2F-4954-422A-A6A0-39530D249DFE}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.40927082",
+      "DurationMax": "0.40927082",
+      "MediaRefs": [
+       {
+        "Id": "344039548"
+       }
+      ]
+     },
+     {
+      "Id": "963961931",
+      "Name": "play_mainMenu_buttonHover",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Main Menu\\play_mainMenu_buttonHover",
+      "GUID": "{3C435103-F655-4964-B7AC-89535FBDA822}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.33397916",
+      "DurationMax": "0.33397916",
+      "MediaRefs": [
+       {
+        "Id": "1051584430"
        }
       ]
      },
@@ -911,6 +955,6 @@
     ]
    }
   ],
-  "FileHash": "{130B0DDE-87EA-3175-2E02-385ECD16C699}"
+  "FileHash": "{D6F9BD31-D455-C8E5-12C4-2269CB172BE9}"
  }
 }

@@ -2,12 +2,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	7578887	play_ghostHover			\Default Work Unit\SFX\Ghost\play_ghostHover	
 	283418385	play_playerFlashlightTurnOff			\Default Work Unit\SFX\Player\play_playerFlashlightTurnOff	
 	665673276	stop_mainMusic			\Default Work Unit\Music\stop_mainMusic	
+	963961931	play_mainMenu_buttonHover			\Default Work Unit\SFX\Main Menu\play_mainMenu_buttonHover	
 	1346240278	play_mainMusic			\Default Work Unit\Music\play_mainMusic	
 	1396280654	set_sfxVolumeSlider			\Default Work Unit\SFX\Main Menu\set_sfxVolumeSlider	
 	1805011878	play_playerFootsteps			\Default Work Unit\SFX\Player\play_playerFootsteps	
 	1807050870	play_playerGrabObject			\Default Work Unit\SFX\Player\play_playerGrabObject	
 	1925692715	play_playerMaskPutOn			\Default Work Unit\SFX\Player\play_playerMaskPutOn	
 	2284819954	set_musicVolumeSlider			\Default Work Unit\SFX\Main Menu\set_musicVolumeSlider	
+	2940935649	play_mainMenu_buttonClick			\Default Work Unit\SFX\Main Menu\play_mainMenu_buttonClick	
 	3293325573	play_playerFlashlightTurnOn			\Default Work Unit\SFX\Player\play_playerFlashlightTurnOn	
 	3959760815	play_ghostVoiceCatchPlayer			\Default Work Unit\SFX\Ghost\play_ghostVoiceCatchPlayer	
 	4037826725	play_ghostBreath			\Default Work Unit\SFX\Ghost\play_ghostBreath	
@@ -47,6 +49,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	307360304	ggj2026_mainMusic_layer2_violin1Marcatto	.cache\90\{90753517-BDC7-BCF8-D94A-05B62B22C0DD}.wem		\Containers\Music\MainMusic\MainMusic\ggj2026_mainMusic_layer2_violin1Marcatto		2191364
 	323317415	enemy_ghost_voiceFar_var2	.cache\49\{49F203A2-3E41-0DA3-BDCB-7B068DD7C248}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Far\enemy_ghost_voiceFar_var2		21140
 	325760462	playerFlashlight_turnOff	.cache\08\{08E2F9E9-F152-B2D8-92F4-9AD38973B1FB}.wem		\Containers\Default Work Unit\SFX\Player\Flashlight\playerFlashlight_turnOff		2922
+	344039548	mainMenu_buttonClick	.cache\C7\{C7150EDE-1563-5F86-0E24-359815FF1F73}.wem		\Containers\Default Work Unit\SFX\MainMenu\mainMenu_buttonClick		3869
 	368748090	enemy_ghost_voiceFar_var3	.cache\A1\{A1CC7787-D2BD-6D8F-2B3D-CE51B969E6F7}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Far\enemy_ghost_voiceFar_var3		33401
 	388198110	enemy_ghost_voiceMid_var4	.cache\8C\{8C17FE12-1B0B-16DC-F912-6BC38AA1950F}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Mid\enemy_ghost_voiceMid_var4		29413
 	437063279	playerFootsteps_concrete_var8	.cache\88\{881BFDC4-BAC2-4828-E087-6E04BC0B125C}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_concrete\playerFootsteps_concrete_var8		4879
@@ -87,4 +90,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	973075849	enemy_ghost_voiceBreath_var1	.cache\B8\{B8A0CE47-1124-2ABD-390C-340AA89CBF6F}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceBreath\enemy_ghost_voiceBreath_var1		45575
 	1009483975	enemy_ghost_voiceBreath_var4	.cache\F6\{F6BFF33C-60BB-4AF3-5376-8A480F404541}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceBreath\enemy_ghost_voiceBreath_var4		55459
 	1043049100	ggj2026_mainMusic_base	.cache\C8\{C866521B-A756-9EA8-7E9F-FED65B85AFBE}.wem		\Containers\Music\MainMusic\MainMusic\ggj2026_mainMusic_base		964599
+	1051584430	mainMenu_buttonHover	.cache\EC\{EC3A8C5D-50EA-DC27-6B6E-A74AF29D211B}.wem		\Containers\Default Work Unit\SFX\MainMenu\mainMenu_buttonHover		3125
 
