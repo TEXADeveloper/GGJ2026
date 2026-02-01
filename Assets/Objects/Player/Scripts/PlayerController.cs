@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
 {
     public static event Action<bool> HasMask;
 
+    [SerializeField] private JumpScare jumpScare;
     [SerializeField] private Animator anim;
     [SerializeField] public bool canLeave = false;
 
@@ -64,7 +65,7 @@ public class PlayerController : MonoBehaviour
             anim.SetTrigger("Shake");
             return;
         }
-        SceneManager.LoadScene("Scenes/Lose condition");
+        jumpScare.LoseGame();
     }
 
     void OnDestroy()
