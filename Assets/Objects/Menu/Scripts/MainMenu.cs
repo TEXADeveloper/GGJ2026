@@ -121,6 +121,7 @@ public class MainMenu : MonoBehaviour
             yield return null;
         }
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        
     }
 
     public void QuitGame() => Application.Quit();
