@@ -743,16 +743,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b57a695c80e6972488b181a5d81f270b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLanguage: 0
-  languageDropdown: {fileID: 914570848}
-  localizedTexts:
-  - {fileID: 1249092382}
-  - {fileID: 1172995378}
-  - {fileID: 1529199283}
-  - {fileID: 155957509}
-  - {fileID: 985445244}
-  - {fileID: 1285590609}
-  - {fileID: 1117881430}
 --- !u!4 &219894020
 Transform:
   m_ObjectHideFlags: 0
@@ -2560,7 +2550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropdown: {fileID: 914570848}
-  lastValue: 1
+  languageManager: {fileID: 219894019}
 --- !u!1 &931790822
 GameObject:
   m_ObjectHideFlags: 0
@@ -5209,7 +5199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2057587787
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5286,7 +5276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2080011221
 RectTransform:
   m_ObjectHideFlags: 0

@@ -4,23 +4,29 @@ using TMPro;
 public class LanguageDropdown : MonoBehaviour
 {
     public TMP_Dropdown dropdown;
-    public int lastValue = -1;
+    public LanguageManager languageManager; // Arrastra el objeto con el LanguageManager aquí
 
-    
-
-    void Update()
+    void Start()
     {
-        if (dropdown.value == lastValue) return;
-
-        lastValue = dropdown.value;
-
-        if (dropdown.value == 0)
+        // Cargamos el valor guardado al iniciar el menú
+        if (dropdown != null)
         {
-            LanguageManager.Instance.SetLanguage(0);
+            dropdown.value = PlayerPrefs.GetInt("Language", 0);
+
+            // Suscribirse al evento para no usar Update
+            dropdown.onValueChanged.AddListener(OnDropdownChanged);
         }
-        else if (dropdown.value == 1)
+    }
+
+    void OnDropdownChanged(int index)
+    {
+        if (languageManager != null)
         {
-            LanguageManager.Instance.SetLanguage(1);
+            languageManager.SetLanguage(index);
+        }
+        else
+        {
+            Debug.LogError("¡Falta el LanguageManager en el Inspector de este Dropdown!");
         }
     }
 }
