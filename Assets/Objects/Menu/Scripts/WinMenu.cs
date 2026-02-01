@@ -10,10 +10,10 @@ public class WinMenu : MonoBehaviour
 
     [Header("Config")]
     public GameResult result;
-    public LocalizedText titleLocalized; // El LocalizedText del título Win/Lose
+    public LocalizedText titleLocalized; // El LocalizedText del tï¿½tulo Win/Lose
 
     [Header("Strings")]
-    public string winES = "¡VICTORIA!";
+    public string winES = "ï¿½VICTORIA!";
     public string winEN = "VICTORY!";
     public string loseES = "DERROTA";
     public string loseEN = "DEFEAT";
@@ -35,6 +35,9 @@ public class WinMenu : MonoBehaviour
         ApplyTexts();
         StartCoroutine(FadeIn());
         _fade.SetActive(true);
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     void ApplyTexts()
