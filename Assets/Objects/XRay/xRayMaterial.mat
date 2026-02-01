@@ -60,13 +60,13 @@ Material:
     m_Ints: []
     m_Floats:
     - _Alpha: 1
-    - _OutlineWidth: 1.5
+    - _OutlineWidth: 3
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _WaveAmplitude: 0.1
-    - _WaveFrequency: 15
+    - _WaveAmplitude: 1
+    - _WaveFrequency: 25
     - _WaveScale: 1
-    - _WaveSpeed: 5
+    - _WaveSpeed: 8
     - _WaveStrength: 0.062
     m_Colors:
     - _Color: {r: 2.198934, g: 2.9960785, b: 0, a: 1}
