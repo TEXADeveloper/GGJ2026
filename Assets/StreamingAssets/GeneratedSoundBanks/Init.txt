@@ -1,11 +1,6 @@
-State Group	ID	Name			Wwise Object Path	Notes
-	1240670792	Distance			\Default Work Unit\Distance	
-
-State	ID	Name	State Group			Notes
-	748895195	None	Distance			
-	1133794587	Near	Distance			
-	1182670505	Mid	Distance			
-	1183803292	Far	Distance			
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	250326712	sfx_volumeSlider			\Default Work Unit\sfx_volumeSlider	
+	3415784672	music_volumeSlider			\Default Work Unit\music_volumeSlider	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Main Audio Bus\SFX	
