@@ -4,6 +4,7 @@ using UnityEngine.AI;
 public class EnemyAI : MonoBehaviour
 {
     [Header("General")]
+    [SerializeField] private Animator anim;
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private EnemyEyes eyes;
     [SerializeField] private AK.Wwise.RTPC distanceParameter;
@@ -81,6 +82,11 @@ public class EnemyAI : MonoBehaviour
         distanceParameter.SetGlobalValue(distanceToPlayer);
     }
 
+    void FixedUpdate()
+    {
+        anim.SetBool("Moving", agent.velocity.magnitude > 0.15f);
+    }
+
     void LateUpdate()
     {
         if (!enemyStunned && (eyes.canSeePlayer || isFollowingPlayer))
@@ -133,7 +139,7 @@ public class EnemyAI : MonoBehaviour
 
         if (distanceToTarget(transform.position, currentTarget.position) <= hurtDistance)
         {
-            eyes.playerCollider.GetComponent<PlayerController>().Hurt();
+            anim.SetTrigger("Attack");
 
             enemyStunned = true;
             stunTimer = stunTime;

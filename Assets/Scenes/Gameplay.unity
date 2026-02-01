@@ -8778,6 +8778,14 @@ PrefabInstance:
       propertyPath: obstacleLayer.m_Bits
       value: 8256
       objectReference: {fileID: 0}
+    - target: {fileID: 8184220214239967993, guid: 60bd278f3a3a16d41a8f88194bf87edb, type: 3}
+      propertyPath: lightCollider
+      value: 
+      objectReference: {fileID: 8705132022880599741}
+    - target: {fileID: 8184220214239967993, guid: 60bd278f3a3a16d41a8f88194bf87edb, type: 3}
+      propertyPath: playerCollider
+      value: 
+      objectReference: {fileID: 8705132022880599740}
     - target: {fileID: 8492255967157615848, guid: 60bd278f3a3a16d41a8f88194bf87edb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -28
