@@ -589,6 +589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd5dcd2a2b27d564cb2b1cf6f687d8e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpScare: {fileID: 0}
   anim: {fileID: 4599808172567627039}
   canLeave: 0
   xrayFeature: {fileID: -4068472120469169748, guid: f288ae1f4751b564a96ac7587541f7a2, type: 2}
@@ -714,10 +715,10 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
+  m_Intensity: 0.4
   m_Range: 15
-  m_SpotAngle: 80
-  m_InnerSpotAngle: 50
+  m_SpotAngle: 60
+  m_InnerSpotAngle: 20
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
