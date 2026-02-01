@@ -12,6 +12,7 @@ public class EnemyEyes : MonoBehaviour
     [SerializeField] private LayerMask obstacleLayer;
     
     [Header("Player")]
+    [SerializeField] public float proximityRealization;
     [SerializeField] public Collider playerCollider;
     [HideInInspector] public bool canSeePlayer = false;
 
@@ -21,9 +22,19 @@ public class EnemyEyes : MonoBehaviour
 
     void FixedUpdate()
     {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, maxDistance, playerLayer);
+        Collider[] nearColliders = Physics.OverlapSphere(transform.position, proximityRealization, playerLayer);
+        
+        if (nearColliders.Length > 0 && nearColliders.Contains(playerCollider))
+        {
+            Vector3 directionToTarget = (playerCollider.transform.position + Vector3.up - transform.position).normalized;
 
-        if (colliders.Length <= 0)
+            shootPlayerRaycast(directionToTarget);
+            return;
+        }
+        
+        Collider[] furtherColliders = Physics.OverlapSphere(transform.position, maxDistance, playerLayer);
+
+        if (furtherColliders.Length <= 0)
         {
             if (canSeePlayer || canSeeLight)
             {
@@ -33,18 +44,13 @@ public class EnemyEyes : MonoBehaviour
             return;
         }
 
-        if (colliders.Contains(playerCollider))
+        if (furtherColliders.Contains(playerCollider))
         {
             Vector3 directionToTarget = (playerCollider.transform.position + Vector3.up - transform.position).normalized;
 
             if (Vector3.Angle(transform.forward, directionToTarget) < angle / 2)
             {
-                float distanceToTarget = Vector3.Distance(transform.position, playerCollider.transform.position);
-
-                if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstacleLayer))
-                    canSeePlayer = true;
-                else
-                    canSeePlayer = false;
+                shootPlayerRaycast(directionToTarget);
             }
             else
                 canSeePlayer = false;
@@ -52,22 +58,37 @@ public class EnemyEyes : MonoBehaviour
             canSeePlayer = false;
 
 
-        if (!canSeePlayer && colliders.Contains(lightCollider))
+        if (!canSeePlayer && furtherColliders.Contains(lightCollider))
         {
             Vector3 directionToTarget = (lightCollider.transform.position - transform.position).normalized;
 
             if (Vector3.Angle(transform.forward, directionToTarget) < angle / 2)
             {
-                float distanceToTarget = Vector3.Distance(transform.position, lightCollider.transform.position);
-
-                if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstacleLayer))
-                    canSeeLight = true;
-                else
-                    canSeeLight = false;
+                shootLightRaycast(directionToTarget);
             }
             else
                 canSeeLight = false;
         } else
+            canSeeLight = false;
+    }
+
+    private void shootPlayerRaycast(Vector3 direction)
+    {
+        float distanceToTarget = Vector3.Distance(transform.position, playerCollider.transform.position);
+
+        if (!Physics.Raycast(transform.position, direction, distanceToTarget, obstacleLayer))
+            canSeePlayer = true;
+        else
+            canSeePlayer = false;
+    }
+
+    private void shootLightRaycast(Vector3 direction)
+    {
+        float distanceToTarget = Vector3.Distance(transform.position, lightCollider.transform.position);
+
+        if (!Physics.Raycast(transform.position, direction, distanceToTarget, obstacleLayer))
+            canSeeLight = true;
+        else
             canSeeLight = false;
     }
 }

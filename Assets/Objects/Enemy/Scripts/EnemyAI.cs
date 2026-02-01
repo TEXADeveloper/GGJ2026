@@ -7,6 +7,8 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private EnemyEyes eyes;
     [SerializeField] private AK.Wwise.RTPC distanceParameter;
+    [SerializeField] private float speed;
+    [SerializeField] private float speedIncrement;
     private Transform currentTarget;
 
     [Header("Patrol")]
@@ -21,6 +23,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private Transform playerTransform;
     [SerializeField, Range(0f, 2f)] private float hurtDistance;
     [SerializeField, Range(0f, 10f)] private float stunTime;
+    [SerializeField, Range(0f, 5f)] private float keepFollowingTime;
     private bool isFollowingPlayer = false;
     private bool playerLostTimer = false;
     private bool enemyStunned = false;
@@ -29,9 +32,34 @@ public class EnemyAI : MonoBehaviour
     [Header("Following Light")]
     private bool isFollowingLight = false;
 
+    void OnEnable()
+    {
+        PlayerController.HasMask += runFaster;
+    }
+
+    void OnDisable()
+    {
+        PlayerController.HasMask -= runFaster;
+    }
+
+    private void runFaster(bool mask)
+    {
+        if (mask)
+        {
+            speed += speedIncrement;
+        } else
+        {
+            speed -= speedIncrement;
+        }
+
+        agent.speed = speed;
+    }
+
     void Start()
     {
-        patrolPoints = transform.GetComponentsInChildren<Transform>();
+        agent.speed = speed;
+
+        patrolPoints = patrolPointsParent.GetComponentsInChildren<Transform>();
 
         currentTarget = patrolPoints[Random.Range(0, patrolPoints.Length)];
     }
@@ -89,7 +117,7 @@ public class EnemyAI : MonoBehaviour
             //? is following though it cannot see him
             if (!playerLostTimer)
             {
-                waitTimer = Random.Range(minWaitingTime, maxWaitingTime);
+                waitTimer = keepFollowingTime;
                 playerLostTimer = true;
             }
             else
