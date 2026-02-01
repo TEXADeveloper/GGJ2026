@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{FB88477A-D0F9-4195-965F-51475F130E7D}",
     "Language": "SFX",
-    "Hash": "{A813E527-C2CA-DC9B-CDF9-AF3C7E9A07CC}",
+    "Hash": "{858C584A-6161-6534-EE54-535A9DEE828D}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -112,6 +112,14 @@
       "CachePath": "3E/{3EBD8B48-36B8-9EFD-1780-D3BB9503797E}.wem"
      },
      {
+      "Id": "152802990",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "playerFlashlight_turnOn.wav",
+      "CachePath": "77/{775D5EDC-1E6A-EA47-0CEC-0758EAF5E969}.wem"
+     },
+     {
       "Id": "191099475",
       "Language": "SFX",
       "Streaming": "false",
@@ -150,6 +158,14 @@
       "Location": "Memory",
       "ShortName": "enemy_ghost_voiceFar_var2.wav",
       "CachePath": "49/{49F203A2-3E41-0DA3-BDCB-7B068DD7C248}.wem"
+     },
+     {
+      "Id": "325760462",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "playerFlashlight_turnOff.wav",
+      "CachePath": "08/{08E2F9E9-F152-B2D8-92F4-9AD38973B1FB}.wem"
      },
      {
       "Id": "368748090",
@@ -352,6 +368,14 @@
       "CachePath": "1C/{1CDC403A-025A-24D0-2336-5CB8CA087E81}.wem"
      },
      {
+      "Id": "831125192",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "playerGrabObject.wav",
+      "CachePath": "AD/{AD788376-DBC4-A4B5-79EA-5785E4B40E77}.wem"
+     },
+     {
       "Id": "832345250",
       "Language": "SFX",
       "Streaming": "false",
@@ -422,6 +446,14 @@
       "Location": "Memory",
       "ShortName": "enemy_ghost_voiceFar_var5.wav",
       "CachePath": "F1/{F12DD38A-37FF-85BF-DAF0-A93F70536E08}.wem"
+     },
+     {
+      "Id": "946909018",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "playerMaskPutOn.wav",
+      "CachePath": "37/{37EC8928-671A-7187-30D3-64E277BFF60E}.wem"
      },
      {
       "Id": "959512282",
@@ -644,6 +676,34 @@
       ]
      },
      {
+      "Id": "283418385",
+      "Name": "play_playerFlashlightTurnOff",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Player\\play_playerFlashlightTurnOff",
+      "GUID": "{CF17E36C-B407-438E-99D6-88D374F69C11}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.30564582",
+      "DurationMax": "0.30564582",
+      "MediaRefs": [
+       {
+        "Id": "325760462"
+       }
+      ]
+     },
+     {
+      "Id": "3293325573",
+      "Name": "play_playerFlashlightTurnOn",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Player\\play_playerFlashlightTurnOn",
+      "GUID": "{8C5F337E-7AAF-4FC0-BE86-812895224115}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.39408332",
+      "DurationMax": "0.39408332",
+      "MediaRefs": [
+       {
+        "Id": "152802990"
+       }
+      ]
+     },
+     {
       "Id": "1805011878",
       "Name": "play_playerFootsteps",
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Player\\play_playerFootsteps",
@@ -731,6 +791,34 @@
           "Id": "838756543"
          }
         ]
+       }
+      ]
+     },
+     {
+      "Id": "1807050870",
+      "Name": "play_playerGrabObject",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Player\\play_playerGrabObject",
+      "GUID": "{DD321B59-D72E-4967-BECB-E38653819D78}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.690875",
+      "DurationMax": "0.690875",
+      "MediaRefs": [
+       {
+        "Id": "831125192"
+       }
+      ]
+     },
+     {
+      "Id": "1925692715",
+      "Name": "play_playerMaskPutOn",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Player\\play_playerMaskPutOn",
+      "GUID": "{F89A5724-A513-408E-B449-979ED87C435C}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3229584",
+      "DurationMax": "1.3229584",
+      "MediaRefs": [
+       {
+        "Id": "946909018"
        }
       ]
      },
@@ -823,6 +911,6 @@
     ]
    }
   ],
-  "FileHash": "{DE6E5700-599D-E43A-BFE0-F8BF49328905}"
+  "FileHash": "{130B0DDE-87EA-3175-2E02-385ECD16C699}"
  }
 }
