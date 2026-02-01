@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private ObjectDisplay display;
     [SerializeField] private JumpScare jumpScare;
     [SerializeField] private Animator anim;
+    [SerializeField] private SoundSwitch soundSwitch;
     [SerializeField] public bool canLeave = false;
 
     [Header("Mask Functionality")]
@@ -27,6 +28,10 @@ public class PlayerController : MonoBehaviour
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        
+        soundSwitch.Switch("Floor");
+        Debug.Log("Floor");
+
 
         pickableObjects = objectParent.GetComponentsInChildren<PickableObject>().ToList<PickableObject>();
         display.SetMax(pickableObjects.Count);

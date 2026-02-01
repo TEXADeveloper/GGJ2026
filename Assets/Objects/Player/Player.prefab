@@ -384,6 +384,7 @@ GameObject:
   - component: {fileID: 8895010427922442266}
   - component: {fileID: 4599808172567627039}
   - component: {fileID: 5551247129243071511}
+  - component: {fileID: 219546694100251478}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -594,6 +595,7 @@ MonoBehaviour:
   display: {fileID: 0}
   jumpScare: {fileID: 0}
   anim: {fileID: 4599808172567627039}
+  soundSwitch: {fileID: 219546694100251478}
   canLeave: 0
   xrayFeature: {fileID: -4068472120469169748, guid: f288ae1f4751b564a96ac7587541f7a2, type: 2}
   objectParent: {fileID: 0}
@@ -692,7 +694,28 @@ MonoBehaviour:
       Value:
         idInternal: 0
         valueGuidInternal: 
-        WwiseObjectReference: {fileID: 0}
+        WwiseObjectReference: {fileID: 11400000, guid: 9418793c034cccc47904249c18f7ff78, type: 2}
+--- !u!114 &219546694100251478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4168977904918702230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9eb4fa7cc316e2488d17cab9863c71b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  switches:
+    dictionary:
+    - Key: Floor
+      Value:
+        idInternal: 0
+        valueGuidInternal: 
+        groupIdInternal: 0
+        groupGuidInternal: 
+        WwiseObjectReference: {fileID: 11400000, guid: c201bec041808f146ba4224092f602bb, type: 2}
 --- !u!1 &6945988632341727630
 GameObject:
   m_ObjectHideFlags: 0
