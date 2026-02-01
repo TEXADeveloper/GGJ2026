@@ -8,7 +8,9 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     public static event Action<bool> HasMask;
+    public static event Action canEscape;
 
+    [SerializeField] private ObjectDisplay display;
     [SerializeField] private JumpScare jumpScare;
     [SerializeField] private Animator anim;
     [SerializeField] public bool canLeave = false;
@@ -27,6 +29,7 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
 
         pickableObjects = objectParent.GetComponentsInChildren<PickableObject>().ToList<PickableObject>();
+        display.SetMax(pickableObjects.Count);
     }
 
     public bool PickupMask()
@@ -45,10 +48,12 @@ public class PlayerController : MonoBehaviour
         if (pickableObjects.Contains(pickable))
         {
             pickableObjects.Remove(pickable);
+            display.PickObject();
 
             if (pickableObjects.Count <= 0)
             {
                 canLeave = true;
+                canEscape?.Invoke();
             }
             return true;
         }

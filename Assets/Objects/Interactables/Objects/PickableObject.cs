@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PickableObject : InteractiveObject
 {
-    [SerializeField] private Light lightComponent;
+    //[SerializeField] private Light lightComponent;
 
     void OnEnable()
     {
@@ -16,7 +16,7 @@ public class PickableObject : InteractiveObject
 
     private void setLight(bool light)
     {
-        lightComponent.enabled = light;
+        //lightComponent.enabled = light;
     }
 
     public override void Interact(PlayerController playerController)
