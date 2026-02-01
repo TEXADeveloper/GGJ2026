@@ -96983,6 +96983,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1531348532}
     m_Modifications:
+    - target: {fileID: 219546694100251478, guid: 9d02085fd7d9f3e40b92c290344ede06, type: 3}
+      propertyPath: switches.dictionary.Array.data[0].Value.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 04c05994f790c6545a624bad5061f518, type: 2}
     - target: {fileID: 1566906066989461943, guid: 9d02085fd7d9f3e40b92c290344ede06, type: 3}
       propertyPath: enemy
       value: 
@@ -96991,6 +96995,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5551247129243071511, guid: 9d02085fd7d9f3e40b92c290344ede06, type: 3}
+      propertyPath: sounds.dictionary.Array.data[0].Value.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 6bb488e3b67ec1046b0b7006032c7112, type: 2}
     - target: {fileID: 6806663421555281976, guid: 9d02085fd7d9f3e40b92c290344ede06, type: 3}
       propertyPath: display
       value: 
