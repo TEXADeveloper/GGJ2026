@@ -1,10 +1,14 @@
 Event	ID	Name			Wwise Object Path	Notes
 	7578887	play_ghostHover			\Default Work Unit\SFX\Ghost\play_ghostHover	
+	283418385	play_playerFlashlightTurnOff			\Default Work Unit\SFX\Player\play_playerFlashlightTurnOff	
 	665673276	stop_mainMusic			\Default Work Unit\Music\stop_mainMusic	
 	1346240278	play_mainMusic			\Default Work Unit\Music\play_mainMusic	
 	1396280654	set_sfxVolumeSlider			\Default Work Unit\SFX\Main Menu\set_sfxVolumeSlider	
 	1805011878	play_playerFootsteps			\Default Work Unit\SFX\Player\play_playerFootsteps	
+	1807050870	play_playerGrabObject			\Default Work Unit\SFX\Player\play_playerGrabObject	
+	1925692715	play_playerMaskPutOn			\Default Work Unit\SFX\Player\play_playerMaskPutOn	
 	2284819954	set_musicVolumeSlider			\Default Work Unit\SFX\Main Menu\set_musicVolumeSlider	
+	3293325573	play_playerFlashlightTurnOn			\Default Work Unit\SFX\Player\play_playerFlashlightTurnOn	
 	3959760815	play_ghostVoiceCatchPlayer			\Default Work Unit\SFX\Ghost\play_ghostVoiceCatchPlayer	
 	4037826725	play_ghostBreath			\Default Work Unit\SFX\Ghost\play_ghostBreath	
 	4150122441	play_ghostVoiceline			\Default Work Unit\SFX\Ghost\play_ghostVoiceline	
@@ -36,11 +40,13 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	70575689	enemy_ghost_voiceFar_var7	.cache\03\{03900969-F68F-8999-6DEC-B1FE0682BFE8}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Far\enemy_ghost_voiceFar_var7		34701
 	102150790	enemy_ghost_voiceFar_var6	.cache\69\{6930389F-6879-A264-6042-0466E0F33117}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Far\enemy_ghost_voiceFar_var6		24743
 	106488395	playerFootsteps_concrete_var7	.cache\3E\{3EBD8B48-36B8-9EFD-1780-D3BB9503797E}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_concrete\playerFootsteps_concrete_var7		5174
+	152802990	playerFlashlight_turnOn	.cache\77\{775D5EDC-1E6A-EA47-0CEC-0758EAF5E969}.wem		\Containers\Default Work Unit\SFX\Player\Flashlight\playerFlashlight_turnOn		3778
 	191099475	playerFootsteps_carpet_var9	.cache\A8\{A896DA53-541B-2C9C-9F47-B18A33495727}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_carpet\playerFootsteps_carpet_var9		6073
 	224002733	playerFootsteps_carpet_var1	.cache\DF\{DFB8AA92-8320-BAF7-C2F8-D4894EE7CE47}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_carpet\playerFootsteps_carpet_var1		4760
 	271499297	enemy_ghost_voiceBreath_var2	.cache\AF\{AF00E34A-E736-BA55-6FB8-63B5937AD90F}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceBreath\enemy_ghost_voiceBreath_var2		60028
 	307360304	ggj2026_mainMusic_layer2_violin1Marcatto	.cache\90\{90753517-BDC7-BCF8-D94A-05B62B22C0DD}.wem		\Containers\Music\MainMusic\MainMusic\ggj2026_mainMusic_layer2_violin1Marcatto		2191364
 	323317415	enemy_ghost_voiceFar_var2	.cache\49\{49F203A2-3E41-0DA3-BDCB-7B068DD7C248}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Far\enemy_ghost_voiceFar_var2		21140
+	325760462	playerFlashlight_turnOff	.cache\08\{08E2F9E9-F152-B2D8-92F4-9AD38973B1FB}.wem		\Containers\Default Work Unit\SFX\Player\Flashlight\playerFlashlight_turnOff		2922
 	368748090	enemy_ghost_voiceFar_var3	.cache\A1\{A1CC7787-D2BD-6D8F-2B3D-CE51B969E6F7}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Far\enemy_ghost_voiceFar_var3		33401
 	388198110	enemy_ghost_voiceMid_var4	.cache\8C\{8C17FE12-1B0B-16DC-F912-6BC38AA1950F}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Mid\enemy_ghost_voiceMid_var4		29413
 	437063279	playerFootsteps_concrete_var8	.cache\88\{881BFDC4-BAC2-4828-E087-6E04BC0B125C}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_concrete\playerFootsteps_concrete_var8		4879
@@ -66,6 +72,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	797647746	enemy_ghost_voiceNear_var3	.cache\7E\{7E5B7416-4CBF-4E9B-52BD-174EFE98DFC0}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Near\enemy_ghost_voiceNear_var3		38390
 	816181268	playerFootsteps_concrete_var10	.cache\54\{542FC6D3-9AB0-4FF5-B1B3-1A34136E3789}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_concrete\playerFootsteps_concrete_var10		3974
 	826416807	enemy_ghost_voiceCatchPlayer	.cache\1C\{1CDC403A-025A-24D0-2336-5CB8CA087E81}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghost_voiceCatchPlayer		39406
+	831125192	playerGrabObject	.cache\AD\{AD788376-DBC4-A4B5-79EA-5785E4B40E77}.wem		\Containers\Default Work Unit\SFX\Player\playerGrabObject		5840
 	832345250	enemy_ghost_voiceBreath_var3	.cache\7D\{7DD504E1-0A83-9BD3-5E82-C9A4D2FF2764}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceBreath\enemy_ghost_voiceBreath_var3		60036
 	834626618	enemy_ghost_voiceNear_var1	.cache\7B\{7BBB0DA9-1490-119D-84FF-60E6912B546C}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Near\enemy_ghost_voiceNear_var1		34107
 	838756543	playerFootsteps_carpet_var2	.cache\C3\{C3053814-B29C-143C-C816-27B65668D214}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_carpet\playerFootsteps_carpet_var2		3963
@@ -75,6 +82,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	905666242	enemy_ghost_voiceFar_var4	.cache\53\{53C9AF33-8B85-05DD-3241-57A1CF021761}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Far\enemy_ghost_voiceFar_var4		25052
 	913918897	enemy_ghost_voiceBreath_var6	.cache\22\{22A534F6-6F4A-D990-C38B-507F7BD6CE83}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceBreath\enemy_ghost_voiceBreath_var6		57858
 	944953343	enemy_ghost_voiceFar_var5	.cache\F1\{F12DD38A-37FF-85BF-DAF0-A93F70536E08}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Far\enemy_ghost_voiceFar_var5		41618
+	946909018	playerMaskPutOn	.cache\37\{37EC8928-671A-7187-30D3-64E277BFF60E}.wem		\Containers\Default Work Unit\SFX\Player\playerMaskPutOn		10618
 	959512282	enemy_ghost_voiceBreath_var5	.cache\B8\{B806C647-FA1D-1DC5-863C-8A6F59444FD4}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceBreath\enemy_ghost_voiceBreath_var5		52631
 	973075849	enemy_ghost_voiceBreath_var1	.cache\B8\{B8A0CE47-1124-2ABD-390C-340AA89CBF6F}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceBreath\enemy_ghost_voiceBreath_var1		45575
 	1009483975	enemy_ghost_voiceBreath_var4	.cache\F6\{F6BFF33C-60BB-4AF3-5376-8A480F404541}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceBreath\enemy_ghost_voiceBreath_var4		55459

@@ -18,7 +18,11 @@ namespace AK
         static const AkUniqueID PLAY_GHOSTVOICECATCHPLAYER = 3959760815U;
         static const AkUniqueID PLAY_GHOSTVOICELINE = 4150122441U;
         static const AkUniqueID PLAY_MAINMUSIC = 1346240278U;
+        static const AkUniqueID PLAY_PLAYERFLASHLIGHTTURNOFF = 283418385U;
+        static const AkUniqueID PLAY_PLAYERFLASHLIGHTTURNON = 3293325573U;
         static const AkUniqueID PLAY_PLAYERFOOTSTEPS = 1805011878U;
+        static const AkUniqueID PLAY_PLAYERGRABOBJECT = 1807050870U;
+        static const AkUniqueID PLAY_PLAYERMASKPUTON = 1925692715U;
         static const AkUniqueID SET_MUSICVOLUMESLIDER = 2284819954U;
         static const AkUniqueID SET_SFXVOLUMESLIDER = 1396280654U;
         static const AkUniqueID STOP_MAINMUSIC = 665673276U;
