@@ -78569,6 +78569,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1444994979557368093, guid: 8d4af527638310a42b346f0f3851710e, type: 3}
   m_PrefabInstance: {fileID: 1737886138}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1740456011 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4168977904918702230, guid: 60bd278f3a3a16d41a8f88194bf87edb, type: 3}
+  m_PrefabInstance: {fileID: 763889177}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1743165305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -96978,6 +96983,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1531348532}
     m_Modifications:
+    - target: {fileID: 1566906066989461943, guid: 9d02085fd7d9f3e40b92c290344ede06, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 1740456011}
     - target: {fileID: 4168977904918702230, guid: 9d02085fd7d9f3e40b92c290344ede06, type: 3}
       propertyPath: m_Name
       value: Player

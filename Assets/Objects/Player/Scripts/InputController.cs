@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 
 public class InputController : MonoBehaviour
 {
+    [SerializeField] private GameObject enemy;
     private InputActionAsset inputAsset;
     private InputActionMap actionMap;
     private InputAction moveAction;
@@ -31,6 +32,7 @@ public class InputController : MonoBehaviour
         actionMap.FindAction("Flashlight").performed += flashlight;
         actionMap.FindAction("Interact").performed += interact;
         actionMap.FindAction("Pause").performed += pause;
+        actionMap.FindAction("DisableEnemy").performed += disableEnemy;
     }
 
     void OnDisable()
@@ -40,6 +42,7 @@ public class InputController : MonoBehaviour
         actionMap.FindAction("Flashlight").performed -= flashlight;
         actionMap.FindAction("Interact").performed -= interact;
         actionMap.FindAction("Pause").performed -= pause;
+        actionMap.FindAction("DisableEnemy").performed -= disableEnemy;
     }
 
     void Start()
@@ -87,5 +90,10 @@ public class InputController : MonoBehaviour
     {
         //pause
         Debug.Log("Pause");
+    }
+
+    public void disableEnemy(InputAction.CallbackContext ctx)
+    {
+        enemy.SetActive(!enemy.activeSelf);
     }
 }

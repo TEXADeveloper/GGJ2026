@@ -36,6 +36,13 @@ public class EnemyAI : MonoBehaviour
     void OnEnable()
     {
         PlayerController.HasMask += runFaster;
+
+        agent.speed = speed;
+
+        patrolPoints = patrolPointsParent.GetComponentsInChildren<Transform>();
+
+        currentTarget = patrolPoints[Random.Range(0, patrolPoints.Length)];
+        waitTimer = 0f;
     }
 
     void OnDisable()
@@ -54,15 +61,6 @@ public class EnemyAI : MonoBehaviour
         }
 
         agent.speed = speed;
-    }
-
-    void Start()
-    {
-        agent.speed = speed;
-
-        patrolPoints = patrolPointsParent.GetComponentsInChildren<Transform>();
-
-        currentTarget = patrolPoints[Random.Range(0, patrolPoints.Length)];
     }
 
     void Update()
