@@ -383,6 +383,7 @@ GameObject:
   - component: {fileID: 4281411007133151805}
   - component: {fileID: 8895010427922442266}
   - component: {fileID: 4599808172567627039}
+  - component: {fileID: 5551247129243071511}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -577,6 +578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02f33a67a0ac6214e8a24c0c54634a43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
 --- !u!114 &6806663421555281976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -672,6 +674,25 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5551247129243071511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4168977904918702230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b30cf3473a57fc544b52150083fca15b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+    dictionary:
+    - Key: Step
+      Value:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
 --- !u!1 &6945988632341727630
 GameObject:
   m_ObjectHideFlags: 0
