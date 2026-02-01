@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A347FD9A-34B5-4A49-839F-0A455F904A84}" SchemaVersion="133">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{A347FD9A-34B5-4A49-839F-0A455F904A84}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{FB88477A-D0F9-4195-965F-51475F130E7D}">
+					<ObjectInclusionList>
+						<ObjectRef Name="play_playerMaskPutOn" ID="{F89A5724-A513-408E-B449-979ED87C435C}" WorkUnitID="{5B6E3737-587C-462E-9771-5A588D86DD58}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="play_mainMenu_buttonClick" ID="{31F3CD2F-4954-422A-A6A0-39530D249DFE}" WorkUnitID="{5B6E3737-587C-462E-9771-5A588D86DD58}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="set_sfxVolumeSlider" ID="{A64ED106-850E-436F-9FA8-61D52C70625B}" WorkUnitID="{5B6E3737-587C-462E-9771-5A588D86DD58}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="play_playerFlashlightTurnOff" ID="{CF17E36C-B407-438E-99D6-88D374F69C11}" WorkUnitID="{5B6E3737-587C-462E-9771-5A588D86DD58}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="play_mainMusic" ID="{F622B88C-9A19-4420-9207-4599E8FC7500}" WorkUnitID="{5B6E3737-587C-462E-9771-5A588D86DD58}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="play_ghostVoiceCatchPlayer" ID="{E7250C19-773D-45CB-879C-EF39E122646D}" WorkUnitID="{5B6E3737-587C-462E-9771-5A588D86DD58}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="play_playerFootsteps" ID="{44AADF82-B7F8-487A-A8B5-0CE7A8A8F18A}" WorkUnitID="{5B6E3737-587C-462E-9771-5A588D86DD58}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="set_musicVolumeSlider" ID="{E005C087-63C0-4911-8961-403A8A697920}" WorkUnitID="{5B6E3737-587C-462E-9771-5A588D86DD58}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="stop_mainMusic" ID="{D66CFD4C-6D0B-4924-B49B-3B77420BD122}" WorkUnitID="{5B6E3737-587C-462E-9771-5A588D86DD58}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="play_mainMenu_buttonHover" ID="{3C435103-F655-4964-B7AC-89535FBDA822}" WorkUnitID="{5B6E3737-587C-462E-9771-5A588D86DD58}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="play_playerGrabObject" ID="{DD321B59-D72E-4967-BECB-E38653819D78}" WorkUnitID="{5B6E3737-587C-462E-9771-5A588D86DD58}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="play_ghostVoiceline" ID="{10E5F93D-40EB-49C8-BA5A-456DD6CEF74D}" WorkUnitID="{5B6E3737-587C-462E-9771-5A588D86DD58}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="play_ghostBreath" ID="{990BFEE2-AA1C-4A5A-A1EC-8F6CEA0A5972}" WorkUnitID="{5B6E3737-587C-462E-9771-5A588D86DD58}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="play_ghostHover" ID="{397458F5-EC83-4B4A-B58D-334F804DB1D9}" WorkUnitID="{5B6E3737-587C-462E-9771-5A588D86DD58}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="play_playerFlashlightTurnOn" ID="{8C5F337E-7AAF-4FC0-BE86-812895224115}" WorkUnitID="{5B6E3737-587C-462E-9771-5A588D86DD58}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

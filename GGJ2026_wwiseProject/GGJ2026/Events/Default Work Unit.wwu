@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5B6E3737-587C-462E-9771-5A588D86DD58}" SchemaVersion="133">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{5B6E3737-587C-462E-9771-5A588D86DD58}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="SFX" ID="{8CF58983-C00F-4235-8097-8C7F3F280172}" ShortID="523388905">
+					<ChildrenList>
+						<Folder Name="Player" ID="{E5990966-762B-4B0F-8347-A1E32B487F7B}" ShortID="878185623">
+							<ChildrenList>
+								<Event Name="play_playerFootsteps" ID="{44AADF82-B7F8-487A-A8B5-0CE7A8A8F18A}">
+									<PropertyList>
+										<Property Name="LimitScope" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ChildrenList>
+										<Action Name="" ID="{9F9CFFF4-0CC6-4BAA-87D1-6754D251AF30}" ShortID="660135798">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="playerFootsteps" ID="{8C89C057-EAD5-4FA2-9B9A-D821E9FEB3B7}" WorkUnitID="{BC40632E-8A2E-4BAF-81D8-32CE39FAFD73}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="play_playerDeath" ID="{000F972B-4CC7-4E1E-A1E3-33259229FBD6}">
+									<PropertyList>
+										<Property Name="LimitScope" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+								</Event>
+								<Event Name="play_playerGrabObject" ID="{DD321B59-D72E-4967-BECB-E38653819D78}">
+									<PropertyList>
+										<Property Name="LimitScope" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ChildrenList>
+										<Action Name="" ID="{AFB9007D-13FD-4DC8-BDB9-4F781EF8DCB6}" ShortID="550227408">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="playerGrabObject" ID="{569AD24E-A8D2-489F-B5CF-80768851462B}" WorkUnitID="{BC40632E-8A2E-4BAF-81D8-32CE39FAFD73}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="play_playerHide" ID="{82947B88-0015-4FFA-BB92-8DB3F940338B}">
+									<PropertyList>
+										<Property Name="LimitScope" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+								</Event>
+								<Event Name="play_playerFlashlightTurnOn" ID="{8C5F337E-7AAF-4FC0-BE86-812895224115}">
+									<ChildrenList>
+										<Action Name="" ID="{58719968-555E-44BC-9A89-C8E23AC29B85}" ShortID="70125052">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="playerFlashlight_turnOn" ID="{B5CB1B7F-44D8-4927-9C7B-8647568C64AB}" WorkUnitID="{BC40632E-8A2E-4BAF-81D8-32CE39FAFD73}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="play_playerFlashlightTurnOff" ID="{CF17E36C-B407-438E-99D6-88D374F69C11}">
+									<ChildrenList>
+										<Action Name="" ID="{1A1F24AB-F7EA-4A0D-8980-046754A60E3F}" ShortID="90922858">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="playerFlashlight_turnOff" ID="{B28515F2-6D39-41BB-ABD2-2FCF50E0A939}" WorkUnitID="{BC40632E-8A2E-4BAF-81D8-32CE39FAFD73}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="play_playerMaskPutOn" ID="{F89A5724-A513-408E-B449-979ED87C435C}">
+									<ChildrenList>
+										<Action Name="" ID="{011826F6-B0DE-4F25-917D-FD866748B9FB}" ShortID="330403420">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="playerMaskPutOn" ID="{5C55EC05-919F-4F50-9F3F-52D8B5EE1670}" WorkUnitID="{BC40632E-8A2E-4BAF-81D8-32CE39FAFD73}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Ghost" ID="{8F310A87-D3C3-4C0E-9DA8-6885964E1F7A}" ShortID="68431110">
+							<ChildrenList>
+								<Event Name="play_ghostVoiceline" ID="{10E5F93D-40EB-49C8-BA5A-456DD6CEF74D}">
+									<ChildrenList>
+										<Action Name="" ID="{DBBBA2FB-D5CA-4BDF-8A0F-3FC6AC8BE52C}" ShortID="933946593">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="enemy_ghostVoiceLine" ID="{7C686A64-AB1B-49F5-92BA-A7E5F619F77A}" WorkUnitID="{BC40632E-8A2E-4BAF-81D8-32CE39FAFD73}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="play_ghostHover" ID="{397458F5-EC83-4B4A-B58D-334F804DB1D9}">
+									<ChildrenList>
+										<Action Name="" ID="{8CBFACBB-3160-437E-B91D-51176D8E9543}" ShortID="756000094">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="enemy_ghost_floatLoop" ID="{74B78515-6A38-41D1-AE7E-6C171AB3B77C}" WorkUnitID="{BC40632E-8A2E-4BAF-81D8-32CE39FAFD73}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="play_ghostVoiceCatchPlayer" ID="{E7250C19-773D-45CB-879C-EF39E122646D}">
+									<ChildrenList>
+										<Action Name="" ID="{D9D65941-C09B-4BE3-93A5-B6637AAD1FE0}" ShortID="394908316">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="enemy_ghost_voiceCatchPlayer" ID="{CC2109A8-0A49-4401-B985-F647527724B3}" WorkUnitID="{BC40632E-8A2E-4BAF-81D8-32CE39FAFD73}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="play_ghostBreath" ID="{990BFEE2-AA1C-4A5A-A1EC-8F6CEA0A5972}">
+									<ChildrenList>
+										<Action Name="" ID="{127EFD3C-FBCE-4E5B-89EE-B43FE1B392AD}" ShortID="909524059">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="enemy_ghostVoiceBreath" ID="{9C30F3D0-5C28-4643-984B-E99CF0A3089D}" WorkUnitID="{BC40632E-8A2E-4BAF-81D8-32CE39FAFD73}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Main Menu" ID="{370232A8-A3C3-4DF1-9764-43217E607B05}" ShortID="482068219">
+							<ChildrenList>
+								<Event Name="set_sfxVolumeSlider" ID="{A64ED106-850E-436F-9FA8-61D52C70625B}">
+									<ChildrenList>
+										<Action Name="" ID="{C9E1ED28-363C-4D31-B6C5-7FBF5449AD36}" ShortID="306546994">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_volumeSlider" ID="{00617027-BCB7-43DB-A84E-F46AEDD66972}" WorkUnitID="{43040999-FA7B-4E52-B1CD-4FCC0D596112}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="set_musicVolumeSlider" ID="{E005C087-63C0-4911-8961-403A8A697920}">
+									<ChildrenList>
+										<Action Name="" ID="{D78F7563-95E2-483B-8AF9-16A1593BAD82}" ShortID="471385650">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="music_volumeSlider" ID="{0E1154BE-F207-4897-80EB-98AB44CA98FF}" WorkUnitID="{43040999-FA7B-4E52-B1CD-4FCC0D596112}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="play_mainMenu_buttonHover" ID="{3C435103-F655-4964-B7AC-89535FBDA822}">
+									<ChildrenList>
+										<Action Name="" ID="{976535E4-A541-4700-85A6-44FB8EA64E03}" ShortID="511318337">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="mainMenu_buttonHover" ID="{F1E104D7-2D83-4049-BFF2-F8370609CFC6}" WorkUnitID="{BC40632E-8A2E-4BAF-81D8-32CE39FAFD73}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="play_mainMenu_buttonClick" ID="{31F3CD2F-4954-422A-A6A0-39530D249DFE}">
+									<ChildrenList>
+										<Action Name="" ID="{3A943241-AA52-4162-912B-297A00B55282}" ShortID="731492824">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="mainMenu_buttonClick" ID="{B4641A64-CD62-42CB-9E4C-A20ABA51B287}" WorkUnitID="{BC40632E-8A2E-4BAF-81D8-32CE39FAFD73}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{7FB10640-7828-459F-812C-40D4470F3488}" ShortID="148130079">
+					<ChildrenList>
+						<Event Name="play_mainMusic" ID="{F622B88C-9A19-4420-9207-4599E8FC7500}">
+							<ChildrenList>
+								<Action Name="" ID="{8167EF8E-11EF-4970-BB5F-81B968863F5A}" ShortID="781252510">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MainMusic" ID="{27EC2603-66A2-4F65-B7BB-28F125382795}" WorkUnitID="{27DEF542-56AF-43F2-A9D5-3C30718D7046}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stop_mainMusic" ID="{D66CFD4C-6D0B-4924-B49B-3B77420BD122}">
+							<ChildrenList>
+								<Action Name="" ID="{47A78C00-BDAB-400B-910B-8E0E3A375256}" ShortID="242103003">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MainMusic" ID="{27EC2603-66A2-4F65-B7BB-28F125382795}" WorkUnitID="{27DEF542-56AF-43F2-A9D5-3C30718D7046}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Ambient" ID="{B7CF0B63-4311-4C9D-8416-E7C2BC1A87F5}" ShortID="398057872">
+					<ChildrenList>
+						<Event Name="play_ambient" ID="{D7BECC7B-CBC2-4253-9B8A-0F6A82EE47DC}"/>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
