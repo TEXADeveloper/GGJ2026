@@ -69,7 +69,7 @@ Material:
     - _WaveSpeed: 5
     - _WaveStrength: 0.062
     m_Colors:
-    - _Color: {r: 426.61908, g: 581.2745, b: 0, a: 1}
+    - _Color: {r: 2.198934, g: 2.9960785, b: 0, a: 1}
     - _WaveDirection: {r: 1, g: 1, b: 0, a: 0}
     - _xRayColor: {r: 0.240566, g: 0.8299777, b: 1, a: 1}
   m_BuildTextureStacks: []

@@ -121,7 +121,14 @@ public class MainMenu : MonoBehaviour
             yield return null;
         }
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        
     }
 
-    public void QuitGame() => Application.Quit();
+    public void QuitGame()
+    {
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #endif
+            Application.Quit();
+    }
 }

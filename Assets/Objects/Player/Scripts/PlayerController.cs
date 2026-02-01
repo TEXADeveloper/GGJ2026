@@ -1,13 +1,19 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    public static event Action<bool> HasMask;
+
+    [SerializeField] private Animator anim;
+    [SerializeField] public bool canLeave = false;
+
     [Header("Mask Functionality")]
     [SerializeField] private ScriptableRendererFeature xrayFeature;
-    [SerializeField] private GameObject UIMask;
     private bool hasMaskOn = false;
 
     [Header("Objects")]
@@ -16,7 +22,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        Cursor.visible = true;
+        Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 
         pickableObjects = objectParent.GetComponentsInChildren<PickableObject>().ToList<PickableObject>();
@@ -29,7 +35,7 @@ public class PlayerController : MonoBehaviour
         
         hasMaskOn = true;
         xrayFeature.SetActive(true);
-        UIMask.SetActive(true);
+        HasMask?.Invoke(true);
         return true;
     }
 
@@ -41,7 +47,7 @@ public class PlayerController : MonoBehaviour
 
             if (pickableObjects.Count <= 0)
             {
-                Debug.Log("Ya puedes Escapar");
+                canLeave = true;
             }
             return true;
         }
@@ -54,13 +60,11 @@ public class PlayerController : MonoBehaviour
         {
             hasMaskOn = false;
             xrayFeature.SetActive(false);
-            UIMask.SetActive(false);
+            HasMask?.Invoke(false);
+            anim.SetTrigger("Shake");
             return;
         }
-        #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-        #endif
-            Application.Quit();
+        SceneManager.LoadScene("Scenes/Lose condition");
     }
 
     void OnDestroy()

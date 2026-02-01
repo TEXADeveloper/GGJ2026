@@ -27,6 +27,6 @@ public class PlayerFlashLight : MonoBehaviour
 
         RaycastHit hit;
         if (Physics.Raycast(spotLight.position, spotLight.forward, out hit, maxDistance, mask))
-            lightCollider.position  = hit.point - spotLight.forward * .1f;
+            lightCollider.position  = hit.point - spotLight.forward;
     }
 }
