@@ -2,12 +2,21 @@ Event	ID	Name			Wwise Object Path	Notes
 	7578887	play_ghostHover			\Default Work Unit\SFX\Ghost\play_ghostHover	
 	665673276	stop_mainMusic			\Default Work Unit\Music\stop_mainMusic	
 	1346240278	play_mainMusic			\Default Work Unit\Music\play_mainMusic	
+	1396280654	set_sfxVolumeSlider			\Default Work Unit\SFX\Main Menu\set_sfxVolumeSlider	
 	1805011878	play_playerFootsteps			\Default Work Unit\SFX\Player\play_playerFootsteps	
+	2284819954	set_musicVolumeSlider			\Default Work Unit\SFX\Main Menu\set_musicVolumeSlider	
+	3959760815	play_ghostVoiceCatchPlayer			\Default Work Unit\SFX\Ghost\play_ghostVoiceCatchPlayer	
+	4037826725	play_ghostBreath			\Default Work Unit\SFX\Ghost\play_ghostBreath	
+	4150122441	play_ghostVoiceline			\Default Work Unit\SFX\Ghost\play_ghostVoiceline	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
+	1240670792	Distance			\Default Work Unit\Distance	
 	1834394558	Surface			\Default Work Unit\Surface	
 
 Switch	ID	Name	Switch Group			Notes
+	1133794587	Near	Distance			
+	1182670505	Mid	Distance			
+	1183803292	Far	Distance			
 	841620460	Concrete	Surface			
 	2412606308	Carpet	Surface			
 
@@ -17,29 +26,57 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1585545	ggj2026_mainMusic_layer1_bowingMetal	.cache\FC\{FCA750C2-4B24-AF86-A5D8-493649566D9E}.wem		\Containers\Music\MainMusic\MainMusic\ggj2026_mainMusic_layer1_bowingMetal		1584852
 	8086561	playerFootsteps_carpet_var7	.cache\1E\{1E002FB0-6F8B-5B06-51EE-0C25E2F0D288}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_carpet\playerFootsteps_carpet_var7		4188
+	17999366	enemy_ghost_voiceMid_var5	.cache\00\{00D3C3C7-1E07-A76F-BB96-6C411C7965CF}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Mid\enemy_ghost_voiceMid_var5		45683
 	20895418	ggj2026_mainMusic_layer2_violin2Marcatto	.cache\49\{49D1EB65-081F-3E46-0986-1AA42627B08D}.wem		\Containers\Music\MainMusic\MainMusic\ggj2026_mainMusic_layer2_violin2Marcatto		2290413
+	26729664	enemy_ghost_voiceNear_var4	.cache\1F\{1F5BEADC-8CE3-B8F4-F257-66F15963A68D}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Near\enemy_ghost_voiceNear_var4		29611
+	31056421	enemy_ghost_voiceNear_var2	.cache\B6\{B62566C3-B62D-1DC2-066E-C2131C9CC093}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Near\enemy_ghost_voiceNear_var2		33418
 	34557856	playerFootsteps_concrete_var3	.cache\FF\{FFF33864-1D4C-F68E-152B-B60F594B1C2E}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_concrete\playerFootsteps_concrete_var3		4274
 	38266933	playerFootsteps_carpet_var10	.cache\B7\{B7B86CA6-298B-62ED-45B3-A8BB27A2FE2B}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_carpet\playerFootsteps_carpet_var10		4699
 	57609123	ggj2026_mainMusic_layer2_celliRepetition	.cache\98\{988FDDF3-7CF2-3659-75DB-61146F6DEE1A}.wem		\Containers\Music\MainMusic\MainMusic\ggj2026_mainMusic_layer2_celliRepetition		1922621
+	70575689	enemy_ghost_voiceFar_var7	.cache\03\{03900969-F68F-8999-6DEC-B1FE0682BFE8}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Far\enemy_ghost_voiceFar_var7		34701
+	102150790	enemy_ghost_voiceFar_var6	.cache\69\{6930389F-6879-A264-6042-0466E0F33117}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Far\enemy_ghost_voiceFar_var6		24743
 	106488395	playerFootsteps_concrete_var7	.cache\3E\{3EBD8B48-36B8-9EFD-1780-D3BB9503797E}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_concrete\playerFootsteps_concrete_var7		5174
 	191099475	playerFootsteps_carpet_var9	.cache\A8\{A896DA53-541B-2C9C-9F47-B18A33495727}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_carpet\playerFootsteps_carpet_var9		6073
 	224002733	playerFootsteps_carpet_var1	.cache\DF\{DFB8AA92-8320-BAF7-C2F8-D4894EE7CE47}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_carpet\playerFootsteps_carpet_var1		4760
+	271499297	enemy_ghost_voiceBreath_var2	.cache\AF\{AF00E34A-E736-BA55-6FB8-63B5937AD90F}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceBreath\enemy_ghost_voiceBreath_var2		60028
 	307360304	ggj2026_mainMusic_layer2_violin1Marcatto	.cache\90\{90753517-BDC7-BCF8-D94A-05B62B22C0DD}.wem		\Containers\Music\MainMusic\MainMusic\ggj2026_mainMusic_layer2_violin1Marcatto		2191364
+	323317415	enemy_ghost_voiceFar_var2	.cache\49\{49F203A2-3E41-0DA3-BDCB-7B068DD7C248}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Far\enemy_ghost_voiceFar_var2		21140
+	368748090	enemy_ghost_voiceFar_var3	.cache\A1\{A1CC7787-D2BD-6D8F-2B3D-CE51B969E6F7}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Far\enemy_ghost_voiceFar_var3		33401
+	388198110	enemy_ghost_voiceMid_var4	.cache\8C\{8C17FE12-1B0B-16DC-F912-6BC38AA1950F}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Mid\enemy_ghost_voiceMid_var4		29413
 	437063279	playerFootsteps_concrete_var8	.cache\88\{881BFDC4-BAC2-4828-E087-6E04BC0B125C}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_concrete\playerFootsteps_concrete_var8		4879
 	438177277	playerFootsteps_concrete_var2	.cache\BA\{BAC9AB2F-AD75-1173-D1D9-04402B8CA29E}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_concrete\playerFootsteps_concrete_var2		3728
+	551096102	enemy_ghost_voiceFar_var1	.cache\5C\{5C87EA5F-D5F2-3578-565C-E8D475244EEE}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Far\enemy_ghost_voiceFar_var1		28026
 	568006993	playerFootsteps_concrete_var5	.cache\1B\{1B22219B-534C-8F41-D3DA-DF0B8F334247}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_concrete\playerFootsteps_concrete_var5		4602
+	570779295	enemy_ghost_voiceMid_var1	.cache\67\{675A791B-3666-9058-9EA9-886D308A15E6}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Mid\enemy_ghost_voiceMid_var1		25226
 	603272388	playerFootsteps_carpet_var4	.cache\10\{108D2D48-DDAC-AC6B-1C89-D847727E8049}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_carpet\playerFootsteps_carpet_var4		3811
+	606741437	enemy_ghost_voiceNear_var6	.cache\35\{356E46E2-EB97-F667-149A-F54C2181E438}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Near\enemy_ghost_voiceNear_var6		29688
 	641726216	playerFootsteps_carpet_var8	.cache\BF\{BF714A64-DCEC-CA86-8FCA-21E9447521E1}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_carpet\playerFootsteps_carpet_var8		5081
+	653900132	enemy_ghost_voiceMid_var6	.cache\9D\{9D0A643B-82B5-18CE-6DF8-CD6D9EED9FD1}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Mid\enemy_ghost_voiceMid_var6		29408
 	655969762	playerFootsteps_carpet_var5	.cache\1C\{1CA7E4D8-B6B5-EFF5-E928-3388758FF0B6}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_carpet\playerFootsteps_carpet_var5		4468
 	661870566	playerFootsteps_concrete_var1	.cache\E4\{E4E93E24-EBDC-9357-BB70-A9090C6AAB41}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_concrete\playerFootsteps_concrete_var1		4761
 	672974534	playerFootsteps_concrete_var4	.cache\03\{032B35B6-EAB4-027C-9F8C-122D8E861431}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_concrete\playerFootsteps_concrete_var4		4705
 	679356120	playerFootsteps_concrete_var9	.cache\BA\{BAAF471D-AD14-CE17-CA54-3586F0A753EF}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_concrete\playerFootsteps_concrete_var9		4108
 	684265968	playerFootsteps_concrete_var6	.cache\75\{75A86AD4-3290-1C50-2DCB-563965BEAD4A}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_concrete\playerFootsteps_concrete_var6		3797
+	703604103	enemy_ghost_voiceMid_var7	.cache\FE\{FE227CF3-DD18-561A-581C-4BF741AB9759}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Mid\enemy_ghost_voiceMid_var7		24697
 	703692284	enemy_ghost_floatLoop	.cache\90\{901B0986-2EB2-A04F-6EF1-CCEB0A758ECF}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghost_floatLoop		42990
+	723057373	enemy_ghost_voiceNear_var7	.cache\D6\{D6FE634C-1872-EBC6-EC6F-2B6D037C2247}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Near\enemy_ghost_voiceNear_var7		37975
 	774998860	playerFootsteps_carpet_var3	.cache\55\{551C4C46-71B1-F6E4-EC97-904E0FA74709}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_carpet\playerFootsteps_carpet_var3		4731
 	781419912	playerFootsteps_carpet_var6	.cache\2D\{2DC79949-8185-DB1D-7662-CDBFB198A0CC}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_carpet\playerFootsteps_carpet_var6		4822
+	791137596	enemy_ghost_voiceMid_var2	.cache\C0\{C0F70713-EB26-E2E5-EC9D-EF9354E03F05}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Mid\enemy_ghost_voiceMid_var2		29304
+	797647746	enemy_ghost_voiceNear_var3	.cache\7E\{7E5B7416-4CBF-4E9B-52BD-174EFE98DFC0}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Near\enemy_ghost_voiceNear_var3		38390
 	816181268	playerFootsteps_concrete_var10	.cache\54\{542FC6D3-9AB0-4FF5-B1B3-1A34136E3789}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_concrete\playerFootsteps_concrete_var10		3974
+	826416807	enemy_ghost_voiceCatchPlayer	.cache\1C\{1CDC403A-025A-24D0-2336-5CB8CA087E81}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghost_voiceCatchPlayer		39406
+	832345250	enemy_ghost_voiceBreath_var3	.cache\7D\{7DD504E1-0A83-9BD3-5E82-C9A4D2FF2764}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceBreath\enemy_ghost_voiceBreath_var3		60036
+	834626618	enemy_ghost_voiceNear_var1	.cache\7B\{7BBB0DA9-1490-119D-84FF-60E6912B546C}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Near\enemy_ghost_voiceNear_var1		34107
 	838756543	playerFootsteps_carpet_var2	.cache\C3\{C3053814-B29C-143C-C816-27B65668D214}.wem		\Containers\Default Work Unit\SFX\Player\playerFootsteps\playerFootsteps_carpet\playerFootsteps_carpet_var2		3963
 	861370862	ggj2026_mainMusic_layer1_bartok	.cache\2B\{2BEBFCA5-ACDE-A60A-88A5-8ED0B959C281}.wem		\Containers\Music\MainMusic\MainMusic\ggj2026_mainMusic_layer1_bartok		2310850
+	863378974	enemy_ghost_voiceNear_var5	.cache\0E\{0E5749F7-FF86-7915-21BE-D416BEB7F79C}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Near\enemy_ghost_voiceNear_var5		45814
+	900338412	enemy_ghost_voiceMid_var3	.cache\FC\{FCA36F5D-1EAE-9930-5FF7-7E23AFDAABAC}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Mid\enemy_ghost_voiceMid_var3		35048
+	905666242	enemy_ghost_voiceFar_var4	.cache\53\{53C9AF33-8B85-05DD-3241-57A1CF021761}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Far\enemy_ghost_voiceFar_var4		25052
+	913918897	enemy_ghost_voiceBreath_var6	.cache\22\{22A534F6-6F4A-D990-C38B-507F7BD6CE83}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceBreath\enemy_ghost_voiceBreath_var6		57858
+	944953343	enemy_ghost_voiceFar_var5	.cache\F1\{F12DD38A-37FF-85BF-DAF0-A93F70536E08}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceLine\Far\enemy_ghost_voiceFar_var5		41618
+	959512282	enemy_ghost_voiceBreath_var5	.cache\B8\{B806C647-FA1D-1DC5-863C-8A6F59444FD4}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceBreath\enemy_ghost_voiceBreath_var5		52631
+	973075849	enemy_ghost_voiceBreath_var1	.cache\B8\{B8A0CE47-1124-2ABD-390C-340AA89CBF6F}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceBreath\enemy_ghost_voiceBreath_var1		45575
+	1009483975	enemy_ghost_voiceBreath_var4	.cache\F6\{F6BFF33C-60BB-4AF3-5376-8A480F404541}.wem		\Containers\Default Work Unit\SFX\Ghost\enemy_ghostVoiceBreath\enemy_ghost_voiceBreath_var4		55459
 	1043049100	ggj2026_mainMusic_base	.cache\C8\{C866521B-A756-9EA8-7E9F-FED65B85AFBE}.wem		\Containers\Music\MainMusic\MainMusic\ggj2026_mainMusic_base		964599
 
