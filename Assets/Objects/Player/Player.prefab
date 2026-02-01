@@ -615,7 +615,7 @@ MonoBehaviour:
     m_Bits: 64
   groundCheckPosition: {fileID: 3768929833001621230}
   groundCheckLength: 0.1
-  speed: 3
+  speed: 2.5
   speedMaskMultiplier: 1
   sensibility: 0.4
   maskSensibilityMultiplier: 1

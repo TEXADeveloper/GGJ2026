@@ -101,8 +101,8 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 47da00bfa8f55c74db736dbb4b365190, type: 2}
-  speed: 2.75
-  speedIncrement: 0.75
+  speed: 2.15
+  speedIncrement: 0.25
   patrolPointsParent: {fileID: 0}
   minDistanceToTarget: 0.4
   minWaitingTime: 1

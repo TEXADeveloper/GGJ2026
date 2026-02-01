@@ -49,6 +49,7 @@ public class PlayerController : MonoBehaviour
         {
             pickableObjects.Remove(pickable);
             display.PickObject();
+            HasMask?.Invoke(true);
 
             if (pickableObjects.Count <= 0)
             {
