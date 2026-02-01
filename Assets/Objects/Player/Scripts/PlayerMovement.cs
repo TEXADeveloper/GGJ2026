@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("General")]
     [SerializeField] private Rigidbody rb;
+    [SerializeField] private Animator anim;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform groundCheckPosition;
     [SerializeField] private float groundCheckLength;
@@ -16,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float speedMaskMultiplier;
     private float speedMultiplier = 1;
-    private Vector3 direction;
+    private Vector3 direction, input;
 
     [Header("Mouse")]
     [SerializeField] private float sensibility;
@@ -32,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void SetMoveInput(Vector2 dir)
     {
+        input = dir;
         direction = transform.forward * dir.y + transform.right * dir.x;
         direction.Normalize();
     }
@@ -57,6 +59,10 @@ public class PlayerMovement : MonoBehaviour
     void LateUpdate()
     {
         moveCamera();
+        if (rb.linearVelocity.magnitude > 0.15f)
+        {
+            anim.SetFloat("WalkSpeed", input.magnitude);
+        }
     }
 
     private void move()

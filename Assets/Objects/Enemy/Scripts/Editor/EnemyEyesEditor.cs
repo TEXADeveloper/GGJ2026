@@ -27,6 +27,8 @@ public class EnemyEyesEditor : Editor
             Handles.color = Color.yellow;
             Handles.DrawLine(fov.transform.position, fov.lightCollider.transform.position);
         }
+
+        Handles.DrawWireArc(fov.transform.position, Vector3.up, Vector3.forward, 360, fov.proximityRealization);
     }
 
     private Vector3 DirectionFromAngle(float eulerY, float angleInDegrees)
