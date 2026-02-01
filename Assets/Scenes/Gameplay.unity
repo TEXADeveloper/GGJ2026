@@ -24681,7 +24681,7 @@ Light:
   serializedVersion: 11
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.4
+  m_Intensity: 0.6
   m_Range: 5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -86049,8 +86049,8 @@ Light:
   serializedVersion: 11
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
-  m_Range: 0.4
+  m_Intensity: 0.4
+  m_Range: 5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -96907,10 +96907,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1531348532}
     m_Modifications:
-    - target: {fileID: 1566906066989461943, guid: 9d02085fd7d9f3e40b92c290344ede06, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4168977904918702230, guid: 9d02085fd7d9f3e40b92c290344ede06, type: 3}
       propertyPath: m_Name
       value: Player
