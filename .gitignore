@@ -676,11 +676,11 @@ $RECYCLE.BIN/
 *_WwiseProject/IncrementalSoundBankData.xml
 
 # soundbanks
-*_WwiseProject/GeneratedSoundBanks/
-*_WwiseProject/GeneratedSoundBanks/
-*_WwiseProject/GeneratedSoundBanks/
-[Aa]ssets/StreamingAssets/Audio/
-[Aa]ssets/StreamingAssets/Audio.meta
+# *_WwiseProject/GeneratedSoundBanks/
+# *_WwiseProject/GeneratedSoundBanks/
+# *_WwiseProject/GeneratedSoundBanks/
+# [Aa]ssets/StreamingAssets/Audio/
+# [Aa]ssets/StreamingAssets/Audio.meta
 
 # build stuff (unsure?)
 Assets/Wwise/Deployment/Plugins/Windows/**/*.meta
