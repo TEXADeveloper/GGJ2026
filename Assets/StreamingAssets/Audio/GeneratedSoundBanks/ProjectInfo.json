@@ -1,11 +1,11 @@
 {
  "ProjectInfo": {
   "Project": {
-   "Name": "Dummy_Test",
+   "Name": "GGJ2026",
    "GUID": "{5C0C7A63-6E03-406B-B34C-EFCACF8882AB}",
    "Generator": "2025.1.4.9062"
   },
-  "CacheRoot": "../../../../../../WwiseProjects/Dummy_Test/.cache",
+  "CacheRoot": "../../../../../../GGJ2026_wwiseProject/GGJ2026/.cache",
   "Platforms": [
    {
     "Name": "Windows",
@@ -24,6 +24,6 @@
     "UseAsStandIn": "true"
    }
   ],
-  "FileHash": "{ED852FD9-9E79-61AE-2D18-0528127F35E6}"
+  "FileHash": "{635AB23E-F471-8D62-88E4-EE37157B26D7}"
  }
 }

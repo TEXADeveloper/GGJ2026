@@ -6,11 +6,11 @@
    "Generator": "2025.1.4.9062"
   },
   "RootPaths": {
-   "ProjectRoot": "../../../../../../../WwiseProjects/Dummy_Test",
-   "SourceFilesRoot": "../../../../../../../WwiseProjects/Dummy_Test/.cache",
+   "ProjectRoot": "../../../../../../../GGJ2026_wwiseProject/GGJ2026",
+   "SourceFilesRoot": "../../../../../../../GGJ2026_wwiseProject/GGJ2026/.cache",
    "SoundBanksRoot": ".",
    "ExternalSourcesInputFile": "",
-   "ExternalSourcesOutputRoot": "../../../../../../../WwiseProjects/Dummy_Test/GeneratedSoundBanks/Windows"
+   "ExternalSourcesOutputRoot": "../../../../../../../GGJ2026_wwiseProject/GGJ2026/GeneratedSoundBanks/Windows"
   },
   "DefaultAlign": "16",
   "Settings": {
@@ -19,9 +19,9 @@
    "SubFoldersForGeneratedFiles": "false",
    "RemoveUnusedGeneratedFiles": "true",
    "SourceControlGeneratedFiles": "false",
-   "GenerateHeaderFile": "false",
-   "GenerateContentTxtFile": "false",
-   "GenerateMetadataXML": "true",
+   "GenerateHeaderFile": "true",
+   "GenerateContentTxtFile": "true",
+   "GenerateMetadataXML": "false",
    "GenerateMetadataJSON": "true",
    "GenerateAllBanksMetadata": "false",
    "GeneratePerBankMetadata": "true",
@@ -33,6 +33,6 @@
    "PrintObjectPath": "true",
    "PrintObjectColor": "true"
   },
-  "FileHash": "{FFF2DBC2-687B-256B-7899-CD62DE36C4F4}"
+  "FileHash": "{F7844927-7C73-CF5A-C37C-564366E34C52}"
  }
 }
