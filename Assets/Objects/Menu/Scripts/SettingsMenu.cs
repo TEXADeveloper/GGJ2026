@@ -1,18 +1,35 @@
 using UnityEngine;
-using UnityEngine.Audio;
-using TMPro;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
+using UnityEngine.UI;
 
 public class SettingsMenu : MonoBehaviour
 {
    // [Header("Resolution")]
     //public TMP_Dropdown resolutionDropdown;
 
+    [SerializeField] private VolumeProfile volume;
+    [SerializeField] private Slider brightnessSlider;
+    private LiftGammaGain gamma;
+    float gammaValue = 0;
+
     Resolution[] resolutions;
 
     void Start()
     {
+        loadResolutions();
+    }
+
+    void OnEnable()
+    {
+        volume.TryGet(out gamma);
+        UpdateGamma(PlayerPrefs.GetFloat("Gamma", gamma.gamma.value.w));
+        brightnessSlider.value = gammaValue;
+    }
+
+    private void loadResolutions()
+    {
         resolutions = Screen.resolutions;
-        //resolutionDropdown.ClearOptions();
 
         int currentRes = 0;
         var options = new System.Collections.Generic.List<string>();
@@ -28,10 +45,6 @@ public class SettingsMenu : MonoBehaviour
                 currentRes = i;
             }
         }
-
-       /* resolutionDropdown.AddOptions(options);
-        resolutionDropdown.value = currentRes;
-        resolutionDropdown.RefreshShownValue();*/
     }
 
     // ---------- AUDIO ----------
@@ -44,5 +57,13 @@ public class SettingsMenu : MonoBehaviour
     }*/
 
     // ---------- LANGUAGE (BASE SIMPLE) ----------
-    
+
+    public void UpdateGamma(float newGamma)
+    {
+        gammaValue = newGamma;
+        PlayerPrefs.SetFloat("Gamma", gammaValue);
+        PlayerPrefs.Save();
+
+        gamma.gamma.Override(new Vector4(1f, 1f, 1f, gammaValue));
+    }
 }
