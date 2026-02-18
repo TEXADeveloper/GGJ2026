@@ -15,14 +15,11 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Movement")]
     [SerializeField] private float speed;
-    [SerializeField] private float speedMaskMultiplier;
     private float speedMultiplier = 1;
     private Vector3 direction, input;
 
     [Header("Mouse")]
     [SerializeField] private float sensibility;
-    [SerializeField] private float maskSensibilityMultiplier;
-    private float mouseMultiplier = 1;
     private float pitch;
     private float yaw;
     private Camera cam;
