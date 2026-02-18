@@ -9,6 +9,7 @@ public class SoundSingleton : MonoBehaviour
     public static SoundSingleton instance;
 
     [SerializeField] private AK.Wwise.RTPC distanceParameter;
+    private Coroutine coroutine;
 
     void Awake()
     {
@@ -16,13 +17,18 @@ public class SoundSingleton : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        instance = this;
-        DontDestroyOnLoad(instance.gameObject);
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(instance.gameObject);
+        }
     }
 
     public void SetMaxDistance()
     {
-        StartCoroutine(distanceFade());
+        /*if (coroutine != null)
+            return;
+        coroutine = */StartCoroutine(distanceFade());
     }
 
     private IEnumerator distanceFade()
@@ -35,4 +41,12 @@ public class SoundSingleton : MonoBehaviour
             yield return null;
         }
     }
+
+    /*void OnDestroy()
+    {
+        if (coroutine == null)
+            return;
+        StopCoroutine(coroutine);
+        coroutine = null;
+    }*/
 }

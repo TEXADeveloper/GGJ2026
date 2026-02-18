@@ -49,7 +49,7 @@ public class EnemyAI : MonoBehaviour
     void OnDisable()
     {
         PlayerController.RunFaster -= runFaster;
-        SoundSingleton.instance?.SetMaxDistance();
+        SoundSingleton.instance.SetMaxDistance();
     }
 
     void Start()
