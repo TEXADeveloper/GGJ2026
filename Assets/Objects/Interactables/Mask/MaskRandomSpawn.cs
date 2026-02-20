@@ -19,7 +19,7 @@ public class MaskRandomSpawn : MonoBehaviour
             int index = Random.Range(0, positions.Count);
 
             GameObject.Instantiate(objectToSpawn, positions[index].position, Quaternion.identity, this.transform);
-            positions.RemoveAt(i);
+            positions.RemoveAt(index);
         }
     }
 }
