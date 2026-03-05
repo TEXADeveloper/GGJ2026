@@ -7,7 +7,9 @@ public class EnemyEyes : MonoBehaviour
 {
     [Header("General")]
     [SerializeField, Range(0f, 360f)] public float angle;
+    [SerializeField, Range(0f, 50f)] private float angleIncrement;
     [SerializeField] public float maxDistance;
+    [SerializeField, Range(0f, 5f)] private float distanceIncrement;
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private LayerMask obstacleLayer;
     
@@ -19,6 +21,29 @@ public class EnemyEyes : MonoBehaviour
     [Header("Light")]
     [SerializeField] public Collider lightCollider;
     [HideInInspector] public bool canSeeLight = false;
+
+    void OnEnable()
+    {
+        PlayerController.PickObjects += playerPicked;
+    }
+
+    void OnDisable()
+    {
+        PlayerController.PickObjects -= playerPicked;
+    }
+
+    private void playerPicked(bool picked)
+    {
+        if (picked)
+        {
+            angle += angleIncrement;
+            maxDistance += distanceIncrement;
+        } else
+        {
+            angle -= angleIncrement;
+            maxDistance -= distanceIncrement;
+        }
+    }
 
     void FixedUpdate()
     {

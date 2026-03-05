@@ -97,6 +97,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42a69a88a47c59f4dbe5b22981c647d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetText: {fileID: 0}
+  positionText: {fileID: 0}
   anim: {fileID: 2322695305339401685}
   agent: {fileID: 3558301607061443028}
   eyes: {fileID: 8184220214239967993}
@@ -106,7 +108,6 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: 47da00bfa8f55c74db736dbb4b365190, type: 2}
   soundTrigger: {fileID: 1677515933232602682}
   speed: 2.15
-  speedIncrement: 0.25
   patrolPointsParent: {fileID: 0}
   minDistanceToTarget: 0.4
   minWaitingTime: 1
@@ -115,6 +116,10 @@ MonoBehaviour:
   hurtDistance: 1.5
   stunTime: 5
   keepFollowingTime: 3
+  speedIncrement: 0.15
+  stunIncrement: -0.5
+  minWaitingIncrement: -0.025
+  maxWaitingIncrement: -0.5
 --- !u!114 &5622852160160888547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,8 +249,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b35c0cc0b45a604e9f4d7ee36c4d2f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angle: 90
+  angle: 85
+  angleIncrement: 20
   maxDistance: 15
+  distanceIncrement: 2
   playerLayer:
     serializedVersion: 2
     m_Bits: 640

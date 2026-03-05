@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -10,7 +13,6 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private AK.Wwise.RTPC distanceParameter;
     [SerializeField] private SoundTrigger soundTrigger;
     [SerializeField] private float speed;
-    [SerializeField] private float speedIncrement;
     private Transform currentTarget;
 
     [Header("Patrol")]
@@ -18,7 +20,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField, Range(0f, 2f)] private float minDistanceToTarget;
     [SerializeField, Range(0f, 10f)] private float minWaitingTime;
     [SerializeField, Range(0f, 10f)] private float maxWaitingTime;
-    private Transform[] patrolPoints;
+    private List<Transform> patrolPoints;
     private float waitTimer;
 
     [Header("Follow Player")]
@@ -33,22 +35,30 @@ public class EnemyAI : MonoBehaviour
 
     [Header("Following Light")]
     private bool isFollowingLight = false;
+    private Vector3 lightPosition;
+
+    [Header("PlayerPicked Increments")]
+    [SerializeField, Range(-1f, 1f)] private float speedIncrement;
+    [SerializeField, Range(-1f, 1f)] private float stunIncrement;
+    [SerializeField, Range(-1f, 1f)] private float minWaitingIncrement;
+    [SerializeField, Range(-1f, 1f)] private float maxWaitingIncrement;
 
     void OnEnable()
     {
-        PlayerController.RunFaster += runFaster;
+        PlayerController.PickObjects += playerPicked;
 
         agent.speed = speed;
 
-        patrolPoints = patrolPointsParent.GetComponentsInChildren<Transform>();
+        patrolPoints = patrolPointsParent.GetComponentsInChildren<Transform>().ToList();
+        patrolPoints.Remove(patrolPointsParent.transform);
 
-        currentTarget = patrolPoints[Random.Range(0, patrolPoints.Length)];
+        currentTarget = patrolPoints[Random.Range(0, patrolPoints.Count)];
         waitTimer = 0f;
     }
 
     void OnDisable()
     {
-        PlayerController.RunFaster -= runFaster;
+        PlayerController.PickObjects -= playerPicked;
         SoundSingleton.instance.SetMaxDistance();
     }
 
@@ -57,14 +67,20 @@ public class EnemyAI : MonoBehaviour
         soundTrigger.PlaySound("Hover");
     }
 
-    private void runFaster(bool mask)
+    private void playerPicked(bool picked)
     {
-        if (mask)
+        if (picked)
         {
             speed += speedIncrement;
+            stunTime += stunIncrement;
+            minWaitingTime += minWaitingIncrement;
+            maxWaitingTime += maxWaitingIncrement;
         } else
         {
             speed -= speedIncrement;
+            stunTime -= stunIncrement;
+            minWaitingTime -= minWaitingIncrement;
+            maxWaitingTime -= maxWaitingIncrement;
         }
 
         agent.speed = speed;
@@ -157,23 +173,24 @@ public class EnemyAI : MonoBehaviour
         {
             currentTarget = eyes.lightCollider.transform;
 
-            agent.SetDestination(currentTarget.position);
-            agent.isStopped = false;
-
             waitTimer = Random.Range(minWaitingTime, maxWaitingTime);
 
             isFollowingLight = true;
-        }
-        else
+        } else if (eyes.canSeeLight)
         {
-            if (distanceToTarget(transform.position, currentTarget.position) <= minDistanceToTarget)
+            agent.isStopped = false;
+            agent.SetDestination(currentTarget.position);
+            lightPosition = currentTarget.position;
+            playerLostTimer = false;
+        }
+
+        if (distanceToTarget(transform.position, lightPosition) <= minDistanceToTarget)
+        {
+            agent.isStopped = true;
+            waitTimer -= Time.deltaTime;
+            if (waitTimer <= 0)
             {
-                agent.isStopped = true;
-                waitTimer -= Time.deltaTime;
-                if (waitTimer < 0)
-                {
-                    isFollowingLight = false;
-                }
+                isFollowingLight = false;
             }
         }
     }
@@ -189,7 +206,7 @@ public class EnemyAI : MonoBehaviour
             Transform newTarget = null;
             while (newTarget == null || newTarget == currentTarget)
             {
-                newTarget = patrolPoints[Random.Range(0, patrolPoints.Length)];
+                newTarget = patrolPoints[Random.Range(0, patrolPoints.Count)];
             }
             currentTarget = newTarget;
 

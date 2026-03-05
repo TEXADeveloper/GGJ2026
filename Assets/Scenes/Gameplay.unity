@@ -3416,7 +3416,7 @@ GameObject:
   m_Component:
   - component: {fileID: 63886186}
   m_Layer: 0
-  m_Name: GameObject (6)
+  m_Name: ObjectPoint(-10,5, -20,5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5651,7 +5651,7 @@ GameObject:
   m_Component:
   - component: {fileID: 121017498}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: MaskPoint(-18,4, -30,1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14880,7 +14880,7 @@ GameObject:
   m_Component:
   - component: {fileID: 325747788}
   m_Layer: 0
-  m_Name: GameObject (4)
+  m_Name: ObjectPoint(-25,7, -34,7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15822,7 +15822,7 @@ GameObject:
   m_Component:
   - component: {fileID: 344770502}
   m_Layer: 0
-  m_Name: PatrolPoints (9)
+  m_Name: PatrolPoint(-30,4, -44,8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18566,7 +18566,7 @@ GameObject:
   m_Component:
   - component: {fileID: 414116164}
   m_Layer: 0
-  m_Name: PatrolPoints (2)
+  m_Name: PatrolPoint(-0,3, -44,8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22495,7 +22495,7 @@ GameObject:
   m_Component:
   - component: {fileID: 501492288}
   m_Layer: 0
-  m_Name: PatrolPoints (3)
+  m_Name: PatrolPoint(-6,2, -34,6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29279,7 +29279,7 @@ GameObject:
   m_Component:
   - component: {fileID: 633094264}
   m_Layer: 0
-  m_Name: GameObject (2)
+  m_Name: ObjectPoint(4,8, -29,0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33886,7 +33886,7 @@ GameObject:
   m_Component:
   - component: {fileID: 720488409}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: MaskPoint(1,7, -36,5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33917,7 +33917,7 @@ GameObject:
   m_Component:
   - component: {fileID: 720762704}
   m_Layer: 0
-  m_Name: PatrolPoints (6)
+  m_Name: PatrolPoint(-18,0, -19,6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35923,6 +35923,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1656726246}
     m_Modifications:
     - target: {fileID: 85213184077436979, guid: 60bd278f3a3a16d41a8f88194bf87edb, type: 3}
+      propertyPath: targetText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 85213184077436979, guid: 60bd278f3a3a16d41a8f88194bf87edb, type: 3}
+      propertyPath: positionText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 85213184077436979, guid: 60bd278f3a3a16d41a8f88194bf87edb, type: 3}
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 1059236759}
@@ -37566,7 +37574,7 @@ GameObject:
   m_Component:
   - component: {fileID: 804208919}
   m_Layer: 0
-  m_Name: PatrolPoints
+  m_Name: PatrolPoint(5,0, -19,1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48711,7 +48719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1053399913}
   m_Layer: 0
-  m_Name: PatrolPoints (10)
+  m_Name: PatrolPoint(-20,7, -34,6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50985,7 +50993,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1122183039}
   m_Layer: 0
-  m_Name: GameObject (3)
+  m_Name: ObjectPoint(-6,2, -34,4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53836,7 +53844,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1175048732}
   m_Layer: 0
-  m_Name: GameObject (5)
+  m_Name: ObjectPoint(-10,5, -39,5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71658,8 +71666,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 9.978518, y: 3.5, z: 5.028267}
-  m_Center: {x: -1.9192066, y: 0, z: -0.1533165}
+  m_Size: {x: 3.0050955, y: 3.5, z: 1.9413757}
+  m_Center: {x: 1.5675044, y: 0, z: -1.6967621}
 --- !u!114 &1471995903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72694,7 +72702,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1488305980}
   m_Layer: 0
-  m_Name: PatrolPoints (5)
+  m_Name: PatrolPoint(-0,1, -24,9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80701,7 +80709,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1676287276}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: ObjectPoint(-10,4, -11,2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87467,7 +87475,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1794546689}
   m_Layer: 0
-  m_Name: GameObject (2)
+  m_Name: MaskPoint(-30,7, -42,7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -91876,6 +91884,63 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!1 &1908322513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1908322515}
+  - component: {fileID: 1908322514}
+  m_Layer: 0
+  m_Name: WwiseGlobal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1908322514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908322513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 623ca557bf3751742b65d9a273a24742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: 1e801671db41258488b95a8bd7ce1a48, type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  engineLogging: 0
+--- !u!4 &1908322515
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908322513}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1911563527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -91952,7 +92017,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1912728689}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: ObjectPoint(-25,0, -18,5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96937,7 +97002,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2007835124}
   m_Layer: 0
-  m_Name: GameObject (3)
+  m_Name: MaskPoint(-15,2, -24,0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102188,7 +102253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2109285103}
   m_Layer: 0
-  m_Name: PatrolPoints (8)
+  m_Name: PatrolPoint(-25,4, -24,4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103391,3 +103456,4 @@ SceneRoots:
   - {fileID: 2097325540}
   - {fileID: 453906951}
   - {fileID: 1432473946}
+  - {fileID: 1908322515}

@@ -8,7 +8,7 @@ using UnityEngine.Rendering.Universal;
 public class PlayerController : MonoBehaviour
 {
     public static event Action<bool> HasMask;
-    public static event Action<bool> RunFaster;
+    public static event Action<bool> PickObjects;
     public static event Action canEscape;
 
     [SerializeField] private ObjectDisplay display;
@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
         hasMaskOn = true;
         xrayFeature.SetActive(true);
         HasMask?.Invoke(true);
-        RunFaster?.Invoke(true);
+        PickObjects?.Invoke(true);
         soundTrigger.PlaySound("Mask");
         return true;
     }
@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
         {
             pickableObjects.Remove(pickable);
             display.PickObject();
-            RunFaster?.Invoke(true);
+            PickObjects?.Invoke(true);
             soundTrigger.PlaySound("Object");
 
             if (pickableObjects.Count <= 0)
@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
             hasMaskOn = false;
             xrayFeature.SetActive(false);
             HasMask?.Invoke(false);
-            RunFaster?.Invoke(false);
+            PickObjects?.Invoke(false);
             anim.SetTrigger("Shake");
             return;
         }
